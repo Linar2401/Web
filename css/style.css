@@ -1,0 +1,90 @@
+.navBar {
+    background: #f8ff8d;
+}
+
+.navBarButton {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 5px 5px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.4s ease-in-out;
+}
+
+.navBarButton:hover{
+    text-decoration: none;
+}
+.six {
+    border-radius: 10px;
+    color: #CEA640;
+    background: #FFF79A;
+    border-bottom: 5px solid #E1B442;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+.six:hover {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+    color: #CEA640;
+}
+
+a.five {
+    border-radius: 3px;
+    color: #40382D;
+    /*box-shadow: inset 0 -5px 0 #40382D;*/
+}
+a.five:hover {
+    box-shadow: inset 0 -60px 0 #40382D, 2px 2px 3px rgba(0, 0, 0, 0.3);
+    color: #deddc7;
+}
+.dropdown-menu {
+    border-radius: 0px;
+}
+
+.dropdown-menu-button{
+    background: #f8ff8d;
+    border: none;
+    color:#CEA640 ;
+}
+
+
+.dropdown-menu-button:hover{
+    background: #e6ed7c;
+    border: none;
+    color:#CEA640 ;
+    box-shadow: none;
+}
+
+.navBarImg{
+    max-width: 15px; height:auto;
+}
+
+.btn-group .btn-primary {
+    background-color:#f8ff8d ;
+}
+
+.btn-group .btn-primary{
+    background-color:#f8ff8d ;
+}
+
+.btn-group .btn-primary:hover,
+.btn-group .btn-primary:focus,
+.btn-group .btn-primary:visited{
+    background-color:#e6ed7c ;
+    box-shadow: none;
+}
+
+div.col-1 img {
+    margin-top: 7px;
+}
+
+.mylight{
+    background: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0535/7026/rrrRainbowFlag_vertical_shop_preview.png");
+}
+
+a:active {
+    color: #939a4d;
+}
