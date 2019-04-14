@@ -40,6 +40,15 @@ button.navbar-toggler:focus,button.navbar-toggler:active  {
     font-size: 1em;
 }
 
+.footp{
+    color: #90a3ff;
+}
+
+.footer{
+    background-color: #3F51B5;
+    min-height: 50px;
+}
+
 .dark-primary-color    { background: #303F9F; }
 .default-primary-color { background: #3F51B5; }
 .light-primary-color   { background: #C5CAE9; }
