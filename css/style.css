@@ -88,3 +88,14 @@ div.col-1 img {
 a:active {
     color: #939a4d;
 }
+
+a.nav-item {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+button.navbar-toggler:focus,button.navbar-toggler:active  {
+    outline: none;
+    box-shadow: none;
+}

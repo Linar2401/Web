@@ -6,25 +6,117 @@
 	<title>Test</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/fav/favicon.png" type="image/png">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light mylight sticky-top">
-    <a class="navbar-brand" href="#">
-        <img class="rounded-circle" src="https://pp.userapi.com/c639524/v639524346/46de2/qgFti0x16y4.jpg?ava=1" alt="ITIS MEDIA ICON">
-    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#navbarSupportedContent">Главная<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link  offset-lg-2" href="#navbarSupportedContent">Главная<span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="groups.html">Группы</a>
             <a class="nav-item nav-link" href="#">Программы обучения</a>
             <a class="nav-item nav-link" href="#">Преподаватели</a>
         </div>
     </div>
+    <div class="btn-group justify-content-end" role="group" aria-label="Example" >
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#login">
+            Log in
+        </button>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#signin">
+            Sign in
+        </button>
+    </div>
 </nav>
+<!-- Modal -->
+<div class="modal fade " id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Форма входа</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col mt-1">
+                                    <label for="loginInNavBar">Login</label>
+                                </div>
+                                <div class="col">
+                                    <input id="loginInNavBar"type="text" class="form-control" placeholder="login">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col mt-1">
+                                    <label for="passwithLogInNavBar">Password</label>
+                                </div>
+                                <div class="col">
+                                    <input id="passwithLogInNavBar"type="password" class="form-control" placeholder="password">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade " id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="SignInModalLabel">Форма входа</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col mt-1">
+                                    <label for="signInNavBar">Login</label>
+                                </div>
+                                <div class="col">
+                                    <input id="signInNavBar"type="text" class="form-control" placeholder="login">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col mt-1">
+                                    <label for="passwithSignInNavBar">Password</label>
+                                </div>
+                                <div class="col">
+                                    <input id="passwithSignInNavBar"type="password" class="form-control" placeholder="password">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="form-check-label" for="teacherCheckBox">Я препод</label>
+                                </div>
+                                <div class="col text-center">
+                                    <input type="checkbox" class="form-check-input" id="teacherCheckBox">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
