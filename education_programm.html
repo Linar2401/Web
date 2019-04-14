@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" href="img/fav/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg mylight sticky-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link offset-lg-2" href="#">Главная</a>
+            <a class="nav-item nav-link" href="groups.html">Группы</a>
+            <a class="nav-item nav-link active" href="education_programm.html">Программы обучения</a>
+            <a class="nav-item nav-link" href="Teachers.html">Преподаватели</a>
+        </div>
+    </div>
+    <div class="btn-group justify-content-end" role="group" aria-label="Example" >
+        <button type="button" class="btn btn-success regAndLog" data-toggle="modal" data-target="#login">
+            Log in
+        </button>
+        <button type="button" class="btn btn-danger regAndLog" data-toggle="modal" data-target="#signin">
+            Sign in
+        </button>
+    </div>
+</nav>
+<!-- Modal -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Форма входа</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col mt-1">
+                                    <label for="loginInNavBar">Login</label>
+                                </div>
+                                <div class="col">
+                                    <input id="loginInNavBar"type="text" class="form-control" placeholder="login">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col mt-1">
+                                    <label for="passwithLogInNavBar">Password</label>
+                                </div>
+                                <div class="col">
+                                    <input id="passwithLogInNavBar"type="password" class="form-control" placeholder="password">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="SignInModalLabel">Форма регистрации</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col mt-1">
+                                    <label for="signInNavBar">Login/Email</label>
+                                </div>
+                                <div class="col">
+                                    <input id="signInNavBar"type="text" class="form-control" placeholder="login/email">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col mt-1">
+                                    <label for="passwithSignInNavBar">Password</label>
+                                </div>
+                                <div class="col">
+                                    <input id="passwithSignInNavBar"type="password" class="form-control" placeholder="password">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col mt-1">
+                                    <label for="specialization">Специализация</label>
+                                </div>
+                                <div class="col">
+                                    <select class="form-control" id="specialization">
+                                        <option value="1s">Гитара</option>
+                                        <option value="2s">Вокал</option>
+                                        <option value="3s">и</option>
+                                        <option value="4s">так</option>
+                                        <option value="5s">далее</option>
+                                        <option value="6s">.</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col mt-1">
+                                    <label for="telNum">Телефон</label>
+                                </div>
+                                <div class="col">
+                                    <input id="telNum" type="tel" class="form-control" required placeholder="tel" pattern="+7[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col text-center mt-1">
+                                    <p>Если студент:</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col mt-1">
+                                    <label for="Course">Курс</label>
+                                </div>
+                                <div class="col">
+                                    <select class="form-control" id="Course">
+                                        <option value="1b">1 курс(Бакалавр)</option>
+                                        <option value="2b">2 курс(Бакалавр)</option>
+                                        <option value="3b">3 курс(Бакалавр)</option>
+                                        <option value="4b">4 курс(Бакалавр)</option>
+                                        <option value="1m">1 курс(Магистр)</option>
+                                        <option value="2m">2 курс(Магистр)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="form-check-label" for="teacherCheckBox">Я препод</label>
+                                </div>
+                                <div class="col text-center">
+                                    <input type="checkbox" class="form-check-input" id="teacherCheckBox">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Sign in</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Header-->
+<div class="container">
+    <div class="row">
+        <div class="offset-lg-1 col-7 mainContainer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cum dolor dolore eveniet incidunt nam recusandae rem voluptatum. Debitis dolore incidunt inventore laborum magnam saepe voluptate voluptatibus? Architecto asperiores consequatur eligendi, esse facere facilis impedit labore magni, nesciunt obcaecati officia perspiciatis quae quasi, quis quisquam sed similique sit tempore? Corporis excepturi quia quo rem sunt! Adipisci atque consequuntur dicta dignissimos doloribus nobis provident qui quos reiciendis voluptatum? A accusantium dolores, ducimus eius esse et eveniet id in incidunt, laboriosam maiores minima modi nisi pariatur praesentium provident quaerat qui quos ratione rem sed sequi tenetur velit vero voluptas voluptate voluptatem voluptates?</div>
+        <div class="col-3 mainContainer ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eum fuga in obcaecati odit sed tempora? Accusantium adipisci alias animi aperiam blanditiis consequuntur culpa delectus dignissimos dolores doloribus esse excepturi, exercitationem facere fuga id in inventore ipsam libero minus neque nihil numquam omnis quas recusandae repudiandae rerum sapiente temporibus tenetur veniam voluptas. A amet cumque doloremque, eligendi fuga fugit id illo ipsa iste maiores nesciunt nobis qui repudiandae suscipit tempora voluptate voluptatem! Adipisci aspernatur blanditiis culpa dicta dolores error facere, fugiat fugit illo ipsa ipsam magnam minima mollitia nam necessitatibus, nesciunt nulla, quam quas qui rerum sequi velit voluptate voluptatum.</div>
+    </div>
+</div>
+<!--End of Header-->
+<!--Content-->
+<!--End of Content-->
+<!--Bottom-->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
