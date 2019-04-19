@@ -10,29 +10,61 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg mylight sticky-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active offset-lg-2" href="#">Главная</a>
-                <a class="nav-item nav-link" href="groups.html">Группы</a>
-                <a class="nav-item nav-link" href="education_programm.html">Программы обучения</a>
-                <a class="nav-item nav-link" href="Teachers.html">Преподаватели</a>
-            </div>
-        </div>
-        <div class="btn-group justify-content-end" role="group" aria-label="Example" >
-            <button type="button" class="btn btn-success regAndLog" data-toggle="modal" data-target="#login">
-                Log in
+    <nav id="nav" class="navbar navbar-expand-md gradient" style="position: absolute; width: 1080px">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="img/Sloy_2.png" width="30px" height="30px">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <button type="button" class="btn regAndLog nav-item mr-md-2 btn-outline-dark navbar-Button-lr-outline" data-toggle="modal" data-target="#login">
+                Вход
             </button>
-            <button type="button" class="btn btn-danger regAndLog" data-toggle="modal" data-target="#signin">
-                Sign in
+            <button type="button" class="btn regAndLog nav-item btn-dark navbar-Button-lr" data-toggle="modal" data-target="#signin">
+                Регистрация
             </button>
+        </form>
+    </div>
+</nav>
+    <div id="carouselExampleControls" class="carousel slide top-carousel" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href="#">
+                <img src="img/1.png" class="d-block w-100" alt="Event">
+            </a>
         </div>
-    </nav>
+        <div class="carousel-item">
+            <a href="#">
+                <img src="img/1.png" class="d-block w-100" alt="Event">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a href="#">
+                <img src="img/1.png" class="d-block w-100" alt="Event">
+            </a>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
     <!-- Modal -->
-    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" style="z-index: 2000" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -50,7 +82,7 @@
                                         <label for="loginInNavBar">Login</label>
                                     </div>
                                     <div class="col">
-                                        <input id="loginInNavBar"type="text" class="form-control" placeholder="login">
+                                        <input id="loginInNavBar"type="email" class="form-control" placeholder="login">
                                     </div>
                                 </div>
                                 <div class="row">
@@ -71,7 +103,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" style="z-index: 2000" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -162,25 +194,66 @@
         </div>
     </div>
     <!--Header-->
-    <div class="container">
-        <div class="row">
-            <div class="offset-lg-1 col-7 mainContainer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam eveniet incidunt nostrum vero voluptas! Ab ad aliquid animi aperiam assumenda atque cum deleniti dolores ea esse eveniet illo, illum ipsa ipsam ipsum laboriosam magni, molestiae molestias neque nihil nisi nobis praesentium quam quidem quis ratione reiciendis, saepe sunt totam ut vel velit vitae voluptas! Adipisci aspernatur autem commodi deleniti dignissimos dolorem doloribus dolorum ea error et expedita facilis fugiat id incidunt labore molestiae mollitia nobis nostrum numquam odit officiis optio quos, recusandae rerum saepe sequi suscipit tempora veniam veritatis voluptates? A dolorum nam odit saepe voluptatibus! Accusantium consequuntur fugit libero officia praesentium rerum, voluptas voluptate. Aliquid consequuntur culpa cumque cupiditate dolorem earum eligendi esse explicabo illum laudantium libero minus nihil obcaecati odit perferendis praesentium saepe similique tempora, temporibus tenetur? Ab aut consequuntur corporis debitis dolorem dolores doloribus earum est et harum hic illum ipsa ipsum iure maiores molestias natus necessitatibus nemo nisi nobis obcaecati pariatur, perferendis praesentium quas qui quia quibusdam recusandae repellendus reprehenderit repudiandae sed sequi sunt veritatis. Adipisci aut cupiditate dolores dolorum, excepturi libero nesciunt numquam provident quasi. Dolore dolorum magnam mollitia similique. Aut consectetur dolore, doloremque ipsam maiores minima natus necessitatibus numquam quasi quia quis temporibus velit veritatis? A accusantium aliquid architecto at culpa debitis ea illo ipsam laborum magnam mollitia natus nesciunt pariatur, quaerat, sapiente sint soluta tempore vero voluptatibus voluptatum! Ad animi autem dicta ducimus error est fuga harum inventore iure laborum molestias necessitatibus nemo, nihil nulla odio odit officia omnis porro quasi qui quia quidem reiciendis reprehenderit sapiente sequi vel vitae voluptatibus. Accusamus aut deserunt dicta dolorum enim, ex illo labore quas. Aperiam consequuntur excepturi natus omnis quaerat tempore unde voluptatibus. Consectetur eos nisi quas repudiandae voluptatum! Aliquid asperiores consequuntur corporis cumque cupiditate doloremque dolorum enim eos ex expedita, labore laborum minima molestiae molestias necessitatibus numquam obcaecati omnis placeat provident quam sed similique, voluptate? Ducimus ea eum harum ipsam laboriosam maiores maxime nemo nihil, quidem quisquam repellat soluta totam voluptate? Dolore doloremque dolorum, enim ipsa minus mollitia neque odio rem sit tempore unde vero! Accusamus architecto asperiores blanditiis deleniti dignissimos in ipsa nam nostrum quod! Aspernatur consequuntur deserunt dolor harum laudantium magni mollitia neque quam tenetur veniam. Enim, esse hic nihil quaerat quos tempore. Asperiores commodi cupiditate illo illum nemo, porro repellendus? Aliquam aliquid animi aspernatur assumenda, consectetur corporis cumque debitis dignissimos, dolor dolorem eos id incidunt iusto pariatur quam quo recusandae reprehenderit soluta totam, unde! Dolores iste, quisquam! A aliquam consequatur cum debitis enim illo ipsam nesciunt sequi. Animi, architecto at culpa dolor eaque eligendi eos facilis ipsum libero maiores modi molestias numquam odio officia omnis quaerat, quidem ratione temporibus. Dignissimos possimus quas quos. Ab asperiores culpa dolorum esse hic minus molestiae nam natus odio. Ad doloremque fuga odio porro quod repellat totam vel. Explicabo, inventore itaque minima perspiciatis reiciendis voluptatum? Ducimus eos et natus necessitatibus officiis perferendis quod repellendus rerum sed voluptatibus. Ad at ducimus ea facilis odit optio placeat quis totam velit. Aliquam animi at dolor fuga fugit impedit minus molestiae non officiis praesentium quo, rerum sequi suscipit tenetur voluptatibus? Corporis id, in ipsam iusto maiores optio rem totam ut. Animi, officiis, tempore! Itaque nihil quaerat quas, ratione reprehenderit tempore vel. Accusantium adipisci animi asperiores assumenda beatae deserunt distinctio doloremque excepturi ipsam, iure minima minus molestias natus nihil nulla officiis praesentium quisquam temporibus vero voluptas! Ab accusantium alias aliquam, autem consectetur cupiditate debitis deleniti deserunt dolores ea eaque earum error esse eum, explicabo fuga hic illo in ipsa itaque laudantium magni maiores minus molestias nam nemo nesciunt odio placeat praesentium quibusdam sapiente sit, totam ullam vero vitae voluptas voluptatem. Amet at atque, distinctio eaque laborum modi quo voluptates. Aliquid asperiores dolores quas quidem suscipit. Accusantium amet consequatur dolorem hic illo nemo, placeat porro quaerat repellat voluptatum. Consequatur consequuntur cupiditate debitis dolor ducimus error et eum incidunt itaque labore maiores, nobis pariatur quae qui quos sed tenetur. Aperiam delectus esse et explicabo fugiat molestiae, nostrum odio quisquam sequi vel. At cum natus quis! Accusamus cumque deserunt dicta facilis itaque nobis provident sint, unde voluptas! Aliquid blanditiis corporis cum deleniti deserunt distinctio ea eaque enim eos ex excepturi expedita harum illo impedit in ipsum modi nobis obcaecati pariatur quis quod, repellendus repudiandae rerum tenetur ut voluptates voluptatum. Accusamus cumque doloribus eaque eligendi, est et facere facilis fugiat in ipsa ipsam laudantium nihil nisi omnis porro repellendus rerum, saepe, tenetur unde veniam? Ab beatae et natus nihil officiis, reiciendis repellat repellendus! Adipisci doloremque libero quisquam. Autem error exercitationem iusto libero minus molestiae neque nesciunt nobis odit officiis quam, quas quo repudiandae sapiente sint totam, unde voluptate. Aspernatur aut beatae blanditiis corporis deleniti dolor dolores doloribus et ex facere fugiat id incidunt itaque, laborum maxime minus odit optio pariatur placeat quod ratione repellat repellendus repudiandae sunt suscipit tempora tempore, voluptas. Accusantium, alias, asperiores corporis dolorum eius eveniet id molestiae mollitia nulla placeat possimus, quisquam quos suscipit tenetur veniam. Accusantium ad atque debitis fugiat necessitatibus nihil totam ut velit vero voluptatem! Ab alias animi consectetur consequatur deserunt dolorum ex excepturi expedita laboriosam magni nemo non odit officia placeat quasi quia, quis quo rem repellendus repudiandae soluta temporibus, veniam voluptate. Accusamus aliquid amet asperiores, autem beatae commodi cum cumque dicta dolore ea earum eius error excepturi fuga inventore magnam minima natus necessitatibus nisi nobis perspiciatis placeat quam quod reprehenderit sequi similique tempora voluptatibus? Animi blanditiis dolore, dolorum eum facilis fuga illum in ipsum iste iure maiores, maxime pariatur quia reprehenderit tempora veritatis vitae voluptas, voluptate! Ab aliquam atque aut culpa delectus dolore earum est fuga illum ipsa iure, magni maiores, minima nisi temporibus ut vel, vero. Asperiores blanditiis consequatur et fuga in ipsum odio officia repellat, sequi veritatis. Expedita ipsam, itaque mollitia reprehenderit sed suscipit totam. Aliquid dolor explicabo harum iste minus natus perspiciatis, sint ullam! Aperiam, architecto beatae cum deleniti dolore earum et expedita facilis harum hic impedit in odit quas quo quos rem saepe ut vel voluptatem voluptates? Aperiam deleniti dolore doloribus illo ipsa, nostrum odit quibusdam? Aliquid consectetur facere hic nisi non pariatur unde!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cum dolor dolore eveniet incidunt nam recusandae rem voluptatum. Debitis dolore incidunt inventore laborum magnam saepe voluptate voluptatibus? Architecto asperiores consequatur eligendi, esse facere facilis impedit labore magni, nesciunt obcaecati officia perspiciatis quae quasi, quis quisquam sed similique sit tempore? Corporis excepturi quia quo rem sunt! Adipisci atque consequuntur dicta dignissimos doloribus nobis provident qui quos reiciendis voluptatum? A accusantium dolores, ducimus eius esse et eveniet id in incidunt, laboriosam maiores minima modi nisi pariatur praesentium provident quaerat qui quos ratione rem sed sequi tenetur velit vero voluptas voluptate voluptatem voluptates?</div>
-            <div class="col-3 mainContainer ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eum fuga in obcaecati odit sed tempora? Accusantium adipisci alias animi aperiam blanditiis consequuntur culpa delectus dignissimos dolores doloribus esse excepturi, exercitationem facere fuga id in inventore ipsam libero minus neque nihil numquam omnis quas recusandae repudiandae rerum sapiente temporibus tenetur veniam voluptas. A amet cumque doloremque, eligendi fuga fugit id illo ipsa iste maiores nesciunt nobis qui repudiandae suscipit tempora voluptate voluptatem! Adipisci aspernatur blanditiis culpa dicta dolores error facere, fugiat fugit illo ipsa ipsam magnam minima mollitia nam necessitatibus, nesciunt nulla, quam quas qui rerum sequi velit voluptate voluptatum.</div>
+    <div class="container" id="MainContent">
+        <div class="row justify-content-around">
+            <div class="col col-md-5 text-center">
+                <h1>Направления обучения</h1>
+                <p>здесь представлены все курсы</p>
+                <p>на которые ты можешь записаться прямо сейчас</p>
+            </div>
+        </div>
+        <div class="row justify-content-around text-center">
+            <div class="col">
+                <img src="img/Layer_21.png" class="rounded-circle img-thumbnail img-direction" alt="guitar">
+                <p>Электрогитара</p>
+            </div>
+            <div class="col">
+                <img src="img/Layer_25.png" alt="vocal" class="rounded-circle img-thumbnail img-direction">
+                <p>Фортепиано</p>
+            </div>
+            <div class="col">
+                <img src="img/Layer_23.png" alt="vocal" class="rounded-circle img-thumbnail img-direction">
+                <p>Вокал</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col">
+                <a href="#">
+                    <h2>Посмотреть все направления</h2>
+                </a>
+            </div>
         </div>
     </div>
-    <!--End of Header-->
-    <!--Content-->
-    <!--End of Content-->
-    <!--footer-->
-    <footer class="footer">
-        <div class="container">
-            <span class="text-muted text-center">Этот сайт ще не сделала какае-то не очень сильная(и сплоченная), но (не) очень уверенная в себе команда быдлокодеров</span><br>
-            <span class="text-muted justify-content-end">                       2019. Все прова просраны</span>
+    <button type="button" class="btn btn-primary btn-lg" id="Courses">
+        Записаться
+    </button>
+    <img src="img/2.png" class="enterToTheCourses" alt="">
+    </div>
+    <footer>
+        <div class="container mt-5">
+            <div class="row text-left">
+                <div class="col">
+                    <h3>Информация</h3>
+                    <p>О нас</p>
+                    <p>Мероприятия</p>
+                    <p>Направления обучения</p>
+                </div>
+                <div class="col">
+                    <h3>Команда</h3>
+                    <p>Проподаватели</p>
+                    <p>Контакты</p>
+                </div>
+                <div class="col">
+                    <h3>Связаться с нами</h3>
+                </div>
+            </div>
         </div>
     </footer>
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

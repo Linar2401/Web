@@ -7,18 +7,48 @@ body {
     background-color:rgba(245,255,207,0.84);
     /*color: #757575;*/
 }
-.mylight{
-    background: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0535/7026/rrrRainbowFlag_vertical_shop_preview.png");
+
+nav {
+    z-index: 100;
 }
+
+.menuButtonImg{
+    height: 2.5rem;
+}
+
+.navbar-Button-lr {
+    background-color: purple;
+    color: white;
+    outline: purple;
+    box-shadow: none;
+}
+
+.navbar-Button-lr:active, .navbar-Button-lr:focus, .navbar-Button-lr:hover {
+    background-color: #5d005d;
+}
+
+.navbar-Button-lr-outline:active,.navbar-Button-lr-outline:hover,.navbar-Button-lr-outline:focus{
+    background-color: #5d005d;
+    color: white;
+}
+
+
+.gradient {
+    display: block;
+    background-image: linear-gradient(to bottom, black 0%, transparent 100%);
+    background-size: cover;
+    background-position: center;
+}
+
 
 a.nav-item.nav-link {
     font-size: 15px;
     font-weight: bold;
-    color: #232323;
+    color: #ececec;
 }
 
 a.nav-item.nav-link.active{
-    color: #000000;
+    color: #ffffff;
 }
 
 .regAndLog {
@@ -40,6 +70,10 @@ button.navbar-toggler:focus,button.navbar-toggler:active  {
     font-size: 1em;
 }
 
+.top-carousel{
+    /*position: absolute;*/
+}
+
 .footp{
     color: #90a3ff;
 }
@@ -49,6 +83,28 @@ button.navbar-toggler:focus,button.navbar-toggler:active  {
     min-height: 50px;
 }
 
+.img-direction{
+    height: 25rem;
+    width: auto;
+}
+
+h2 {
+    color: #333333;
+}
+
+#Courses {
+    font-size: 4rem;
+    position: relative;
+    z-index: 4000;
+
+}
+.enterToTheCourses {
+    z-index: 20;
+}
+
+#MainContent{
+    background-color: #f5ffcf;
+}
 .dark-primary-color    { background: #303F9F; }
 .default-primary-color { background: #3F51B5; }
 .light-primary-color   { background: #C5CAE9; }
@@ -57,3 +113,4 @@ button.navbar-toggler:focus,button.navbar-toggler:active  {
 .primary-text-color    { color: #212121; }
 .secondary-text-color  { color: #757575; }
 .divider-color         { border-color: #BDBDBD; }
+
