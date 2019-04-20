@@ -1,5 +1,9 @@
 var time = 375;
 
+function f1() {
+    document.location.href = "profile.html";
+}
+
 function toNotifications() {
     setTimeout(toNotifications2,time);
 }
@@ -23,4 +27,5 @@ function toSch2() {
 function toJoinGr2() {
     document.getElementById("joiningGroupsCollapse").scrollIntoView(true);
 }
+
 
