@@ -17,13 +17,13 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link active" href="#">Главная</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Направления обучения</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a class="nav-link" href="#">Контакты</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -39,7 +39,7 @@
     <div id="carouselExampleControls" class="carousel slide top-carousel" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <a href="#">
+            <a href="https://www.google.com">
                 <img src="img/1.png" class="d-block w-100" alt="Event">
             </a>
         </div>
@@ -65,7 +65,7 @@
 </div>
     <!-- Modal -->
     <div class="modal fade" style="z-index: 2000" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Форма входа</h5>
@@ -98,7 +98,7 @@
                     </form>
                 </div>
                 <div class="modal-footer text-center">
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Login</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal" id="logbtn">Login</button>
                 </div>
             </div>
         </div>
@@ -224,7 +224,7 @@
             </div>
         </div>
     </div>
-    <button type="button" class="btn btn-primary btn-lg" id="Courses">
+    <button type="button" class="btn btn-primary" id="Courses">
         Записаться
     </button>
     <img src="img/2.png" class="enterToTheCourses" alt="">
@@ -244,12 +244,25 @@
                     <p>Контакты</p>
                 </div>
                 <div class="col">
-                    <h3>Связаться с нами</h3>
+                    <h3>Связаться с нами</h3><br>
+                    <div class="container align-items-center">
+                        <div class="row">
+                            <div class="col">
+                                <a href="#" class="SocNetLinkImg"><img src="img/instlogo.png" alt="Instagramm"></a>
+                                <a href="#" class="SocNetLinkImg"><img src="img/twitterlogo.png" alt="Twitter"></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="#" class="SocNetLinkImg"><img src="img/gpluslogo.png" alt="Goggle+"></a>
+                                <a href="#" class="SocNetLinkImg"><img src="img/vklogo.png" alt="vk"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>

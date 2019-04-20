@@ -74,6 +74,30 @@ button.navbar-toggler:focus,button.navbar-toggler:active  {
     /*position: absolute;*/
 }
 
+a h2{
+    color: #333333;
+    text-decoration: none;
+    }
+
+a h2:visited,a h2:hover,a h2:focus {
+    text-decoration: underline;
+
+}
+
+a.nav-link {
+    color: #e2e2e2;
+    font-size: 2rem;
+}
+
+a.nav-link:active,a.nav-link:focus,a.nav-link:visited {
+    color: white;
+}
+
+.SocNetLinkImg {
+    margin: 25px;
+}
+
+
 .footp{
     color: #90a3ff;
 }
@@ -94,7 +118,7 @@ h2 {
 
 #Courses {
     font-size: 4rem;
-    position: relative;
+    position: absolute;
     z-index: 4000;
 
 }

@@ -7,18 +7,19 @@ var btn = document.getElementById("Courses");
 // block.style.marginTop = carousel.offsetHeight - navbar.offsetHeight + "px";
 // alert(carousel.offsetHeight)
 f1();
+btn.style.top = enterTTC[0].offsetHeight/2 - btn.offsetHeight/2  + block.offsetHeight + carousel.offsetHeight + "px";
+btn.style.left = enterTTC[0].offsetWidth/2 - btn.offsetWidth/2 + "px";
 function f1() {
-    for (let i = 0; i < arrOfImg.length; i++){
-        arrOfImg[i].style.width = carousel.offsetWidth/4 + "px";
-        arrOfImg[i].style.height = carousel.offsetWidth/4 + "px";
-    }
     btn.style.zIndex = "1000";
-    enterTTC[0].style.zIndex = "100";
-    btn.style.top = enterTTC[0].offsetHeight/2 - btn.offsetHeight/2 + "px";
+    btn.style.top = enterTTC[0].offsetHeight/2 - btn.offsetHeight/2 + block.offsetHeight + "px";
     btn.style.left = enterTTC[0].offsetWidth/2 - btn.offsetWidth/2 + "px";
     enterTTC[0].style.width = carousel.offsetWidth + "px";
     enterTTC[0].style.height = (carousel.offsetWidth/40)*11 + "px";
     navbar.style.width = carousel.offsetWidth + "px";
+    for (let i = 0; i < arrOfImg.length; i++){
+        arrOfImg[i].style.width = carousel.offsetWidth/4 + "px";
+        arrOfImg[i].style.height = carousel.offsetWidth/4 + "px";
+    }
 }
 window.onresize= function(){
     navbar.style.width = carousel.offsetWidth + "px";
@@ -28,6 +29,10 @@ window.onresize= function(){
         arrOfImg[i].style.width = carousel.offsetWidth/4 + "px";
         arrOfImg[i].style.height = carousel.offsetWidth/4 + "px";
     }
-    btn.style.top = enterTTC[0].offsetHeight/2 + btn.offsetHeight + "px";
+    btn.style.top = enterTTC[0].offsetHeight/2 - btn.offsetHeight/2  + block.offsetHeight + carousel.offsetHeight + "px";
     btn.style.left = enterTTC[0].offsetWidth/2 - btn.offsetWidth/2 + "px";
+}
+
+document.getElementById("logbtn").onclick = function () {
+    document.location.href = "profile.html";
 }
