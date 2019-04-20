@@ -26,13 +26,17 @@ window.onresize= function(){
     enterTTC[0].style.height = (carousel.offsetWidth/40)*11 + "px";
     enterTTC[0].style.width = carousel.offsetWidth + "px";
     for (var i = 0; i < arrOfImg.length; i++){
-        arrOfImg[i].style.width = carousel.offsetWidth/4 + "px";
-        arrOfImg[i].style.height = carousel.offsetWidth/4 + "px";
+        arrOfImg[i].style.width = carousel.offsetWidth/5 + "px";
+        arrOfImg[i].style.height = carousel.offsetWidth/5 + "px";
     }
     btn.style.top = enterTTC[0].offsetHeight/2 - btn.offsetHeight/2  + block.offsetHeight + carousel.offsetHeight + "px";
     btn.style.left = enterTTC[0].offsetWidth/2 - btn.offsetWidth/2 + "px";
 }
 
 document.getElementById("logbtn").onclick = function () {
+    document.location.href = "profile.html";
+}
+
+document.getElementById("reg").onclick = function () {
     document.location.href = "profile.html";
 }

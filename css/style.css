@@ -4,7 +4,7 @@ html{
 
 body {
     font-size: 16px;
-    background-color:rgba(245,255,207,0.84);
+    background-color:white;
     /*color: #757575;*/
 }
 
@@ -127,7 +127,7 @@ h2 {
 }
 
 #MainContent{
-    background-color: #f5ffcf;
+    background-color: white;
 }
 .dark-primary-color    { background: #303F9F; }
 .default-primary-color { background: #3F51B5; }
@@ -137,4 +137,13 @@ h2 {
 .primary-text-color    { color: #212121; }
 .secondary-text-color  { color: #757575; }
 .divider-color         { border-color: #BDBDBD; }
+
+a p {
+    color: #333333;
+    text-decoration: none;
+}
+a p:focus, a p:visited, a p:hover{
+    text-decoration: underline;
+}
+
 

@@ -1,3 +1,7 @@
+.colored {
+    background-image: url("../img/back.png");
+}
+
 #upbutton {
     background: url("../img/top.png") no-repeat top left;
     height: 60px;
@@ -13,4 +17,29 @@
 footer {
     border-top: 2px solid #dfe0e1;
     margin-top: 2px;
+}
+
+a p {
+    color: #333333;
+    text-decoration: none;
+}
+a p:focus, a p:visited, a p:hover{
+    text-decoration: underline;
+}
+
+.rounded-circle {
+    max-width: 95%;
+    height: auto;
+}
+
+#headingOne {
+    background-image: url("../img/guitar.png");
+}
+
+#headingTwo {
+    background-image: url("../img/vocal.png");
+}
+
+#headingThree {
+    background-image: url("../img/pianno.png");
 }
