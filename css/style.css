@@ -112,6 +112,10 @@ a.nav-link:active,a.nav-link:focus,a.nav-link:visited {
     width: auto;
 }
 
+.footerLink {
+    text-decoration: none;
+}
+
 h2 {
     color: #333333;
 }

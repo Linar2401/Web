@@ -40,3 +40,7 @@ document.getElementById("logbtn").onclick = function () {
 document.getElementById("reg").onclick = function () {
     document.location.href = "profile.html";
 }
+
+function IncorrectEntet() {
+    alert("Выполнен не корректный вход/регистрация. Пожалуйста, попробуйте еще раз.")
+}
