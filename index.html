@@ -27,21 +27,12 @@
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <div class="d-block">
-                <button type="button" class="btn regAndLog nav-item mr-md-2 btn-outline-dark navbar-Button-lr-outline" data-toggle="modal" data-target="#login">
-                    Вход
-                </button>
-                <button type="button" class="btn regAndLog nav-item btn-dark navbar-Button-lr" data-toggle="modal" data-target="#signin">
-                    Регистрация
-                </button>
-            </div>
-            <div class="profile ml-3">
-                <a href="profile.html">
-                    <h2>
-                        Вася Пупкин
-                    </h2>
-                </a>
-            </div>
+            <button type="button" class="btn regAndLog nav-item mr-md-2 btn-outline-dark navbar-Button-lr-outline" data-toggle="modal" data-target="#login">
+                Вход
+            </button>
+            <button type="button" class="btn regAndLog nav-item btn-dark navbar-Button-lr" data-toggle="modal" data-target="#signin">
+                Регистрация
+            </button>
         </form>
     </div>
 </nav>
@@ -83,7 +74,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="">
+                    <form action="/" method="post">
                         <div class="form-group">
                             <div class="container-fluid">
                                 <div class="row">
@@ -91,7 +82,7 @@
                                         <label for="loginInNavBar">Login</label>
                                     </div>
                                     <div class="col">
-                                        <input id="loginInNavBar"type="email" class="form-control" placeholder="login">
+                                        <input id="loginInNavBar" name="login" type="email" class="form-control" placeholder="login" required>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -99,15 +90,15 @@
                                         <label for="passwithLogInNavBar">Password</label>
                                     </div>
                                     <div class="col">
-                                        <input id="passwithLogInNavBar"type="password" class="form-control" placeholder="password">
+                                        <input id="passwithLogInNavBar" name="password" type="password" class="form-control" placeholder="password" required>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="modal-footer text-center">
+                            <button type="submit" class="btn btn-success" id="logbtn">Login</button>
+                        </div>
                     </form>
-                </div>
-                <div class="modal-footer text-center">
-                    <button type="button" class="btn btn-success" data-dismiss="modal" id="logbtn">Login</button>
                 </div>
             </div>
         </div>
@@ -122,7 +113,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="">
+                    <form action="/register" method="post">
                         <div class="form-group">
                             <div class="container-fluid">
                                 <div class="row">
@@ -130,7 +121,7 @@
                                         <label for="signInNavBar">Login/Email</label>
                                     </div>
                                     <div class="col">
-                                        <input id="signInNavBar"type="text" class="form-control" placeholder="login/email">
+                                        <input id="signInNavBar" name="email" type="email" class="form-control" placeholder="login/email" required>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -138,7 +129,7 @@
                                         <label for="passwithSignInNavBar">Password</label>
                                     </div>
                                     <div class="col">
-                                        <input id="passwithSignInNavBar"type="password" class="form-control" placeholder="password">
+                                        <input id="passwithSignInNavBar" name="password" type="password" class="form-control" placeholder="password" required>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -146,13 +137,13 @@
                                         <label for="specialization">Специализация</label>
                                     </div>
                                     <div class="col">
-                                        <select class="form-control" id="specialization">
-                                            <option value="1s">Гитара</option>
-                                            <option value="2s">Вокал</option>
-                                            <option value="3s">и</option>
-                                            <option value="4s">так</option>
-                                            <option value="5s">далее</option>
-                                            <option value="6s">.</option>
+                                        <select class="form-control" name="specialization" id="specialization">
+                                            <option value="1">Гитара</option>
+                                            <option value="2">Вокал</option>
+                                            <option value="3">и</option>
+                                            <option value="4">так</option>
+                                            <option value="5">далее</option>
+                                            <option value="6">.</option>
                                         </select>
                                     </div>
                                 </div>
@@ -161,7 +152,12 @@
                                         <label for="telNum">Телефон</label>
                                     </div>
                                     <div class="col">
-                                        <input id="telNum" type="tel" class="form-control" required placeholder="tel" pattern="+7[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                                        <input id="telNum" name="tel" type="tel" class="form-control" required placeholder="tel" pattern="+7[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col text-center mt-1">
+                                        <p>Если студент:</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -181,7 +177,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <label class="form-check-label" for="teacherCheckBox">Я преподаватель</label>
+                                        <label class="form-check-label" for="teacherCheckBox">Я препод</label>
                                     </div>
                                     <div class="col text-center">
                                         <input type="checkbox" class="form-check-input" id="teacherCheckBox">
@@ -189,10 +185,10 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="modal-footer text-center">
+                            <button type="submit" class="btn btn-success" id="reg">Регистрация</button>
+                        </div>
                     </form>
-                </div>
-                <div class="modal-footer text-center">
-                    <button type="button" class="btn btn-success" data-dismiss="modal" id="reg" onclick="IncorrectEntet">Регистрация</button>
                 </div>
             </div>
         </div>
@@ -228,7 +224,7 @@
             </div>
         </div>
     </div>
-    <button type="button" class="btn btn-light" id="Courses" data-toggle="modal" data-target="#signin">
+    <button type="button" class="btn btn-primary" id="Courses" data-toggle="modal" data-target="#signin">
         Записаться
     </button>
     <img src="img/2.png" class="enterToTheCourses" alt="">
@@ -238,31 +234,27 @@
             <div class="row text-left">
                 <div class="col">
                     <h3>Информация</h3>
-                    <a href="#">
-                        <p>О нас</p>
-                    </a>
-                    <a href="dir.html">
-                        <p>Направления обучения</p>
-                    </a>
+                    <p>О нас</p>
+                    <p>Мероприятия</p>
+                    <p>Направления обучения</p>
                 </div>
                 <div class="col">
                     <h3>Команда</h3>
-                    <a href="contacts2.html">
-                        <p>Проподаватели</p>
-                    </a>
+                    <p>Проподаватели</p>
                     <a href="contacts.html"><p>Контакты</p></a>
                 </div>
                 <div class="col">
                     <h3>Связаться с нами</h3><br>
                     <div class="container align-items-center">
                         <div class="row">
-                            <div class="col-lg-2 mt-2 col">
-                                <a href="https://www.instagram.com/?hl=ru" class="SocNetLinkImg"><img src="img/instlogo.png" alt="Instagramm"></a>
+                            <div class="col">
+                                <a href="#" class="SocNetLinkImg"><img src="img/instlogo.png" alt="Instagramm"></a>
+                                <a href="#" class="SocNetLinkImg"><img src="img/twitterlogo.png" alt="Twitter"></a>
                             </div>
-                            <div class="col-lg-2 mt-2 col">
-                                <a href="https://twitter.com/" class="SocNetLinkImg"><img src="img/twitterlogo.png" alt="Twitter"></a>
-                            </div>
-                            <div class="col-lg-2 mt-2 col">
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="#" class="SocNetLinkImg"><img src="img/gpluslogo.png" alt="Goggle+"></a>
                                 <a href="https://vk.com" class="SocNetLinkImg"><img src="img/vklogo.png" alt="vk"></a>
                             </div>
                         </div>
