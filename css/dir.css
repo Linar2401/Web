@@ -1,0 +1,62 @@
+.navbar-light {
+    background: rgba(102, 102, 102, 0.3);
+}
+
+.intro-text {
+    background-image: url("../img/dir/Layer_31.png");
+}
+
+nav {
+    position: absolute;
+    z-index: 10000;
+}
+
+a p {
+    color: #333333;
+    text-decoration: none;
+}
+a p:focus, a p:visited, a p:hover{
+    text-decoration: underline;
+}
+
+.select-btn {
+    border: 2px solid black;
+    background-color: rgba(0,0,0,0);
+}
+
+.select-btn.active {
+    border: 2px solid #e63900;
+    background-color: white;
+}
+
+#select_buttons {
+    background-color: #aadbdd;
+}
+
+.info {
+    background-image: url("../img/dir/Layer_32.png");
+}
+
+.main_block {
+    border: 2px dashed #e63900;
+    background-color: white;
+}
+
+.another_block{
+    border: 2px solid black;
+    font-size: 1.5rem;
+}
+
+#guitar{
+    background: url("../img/dir/Layer_21.png") right no-repeat;
+    height: 463px;
+}
+
+.sign-up-btn {
+    background-color: white;
+    border: 2px solid #e63900;
+}
+
+footer {
+    background-color: #aadbdd;
+}

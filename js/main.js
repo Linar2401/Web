@@ -4,7 +4,7 @@ var navbar = document.getElementById("nav");
 var arrOfImg = document.getElementsByClassName("img-direction");
 var enterTTC = document.getElementsByClassName("enterToTheCourses");
 var btn = document.getElementById("Courses");
-// block.style.marginTop = carousel.offsetHeight - navbar.offsetHeight + "px";
+// block.style.marginTop = carousel.offsetHeight - navigation_bar.offsetHeight + "px";
 // alert(carousel.offsetHeight)
 f1();
 btn.style.top = enterTTC[0].offsetHeight/2 - btn.offsetHeight/2  + block.offsetHeight + carousel.offsetHeight + "px";

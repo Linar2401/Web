@@ -7,13 +7,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/dir.css">
     <link rel="icon" href="img/fav/favicon.png" type="image/png">
-    <script src="js/profile.js"></script>
     <title>Направления обучения</title>
 </head>
 <body>
-<nav class="colored navbar navbar-expand-md navbar-light bg-light">
+<nav class="colored navbar navbar-expand-md navbar-light" id="nav" style="position: absolute; width: 1080px">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -48,88 +47,157 @@
         </div>
     </form>
 </nav>
-<div id="accordion" class="text-center">
-    <div class="card">
-        <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-                <button class="btn collapsed btn-light active" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <h2>Гитара</h2>
-                </button>
-            </h5>
+<div class="container-fluid intro-text text-center" id="intro">
+    <div class="row">
+        <div class="col" id="intro_first">
+            <img src="img/dir/Classes.png" alt="Classes">
         </div>
-
-        <div id="collapseOne" class="collapse colored" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-                <div class="container-fluid">
-                    <h2>Рассказывается о программе обучения</h2>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="img/dir/Here_you_can_find_out_about_each_direction_more.png" alt="Here you can find out about each direction more">
+        </div>
+    </div>
+</div>
+<div class="container-fluid mt-3 p-3" id="select_buttons">
+    <div class="row justify-content-around">
+        <button type="button" class="btn select-btn" id="sel-1" data-toggle="collapse" data-target="#aguitar" aria-expanded="false" aria-controls="collapseGuitar">
+            <p>Акуст.гитара</p>
+            <img src="img/dir/guitar%20(1).png" alt="">
+        </button>
+        <button type="button" class="btn select-btn" id="sel-2" data-toggle="collapse" data-target="#avocal" aria-expanded="false" aria-controls="collapseVocal">
+            <p>Вокал</p>
+            <img src="img/dir/microphone.png" alt="">
+        </button>
+        <button type="button" class="btn select-btn" id="sel-3">
+            <p>Электрогитара</p>
+            <img src="img/dir/electroquitar.png" alt="">
+        </button>
+    </div>
+</div>
+<div class="container-fluid info p-3 mt-2">
+    <div class="collapse main_block show" id="aguitar">
+        <div class="row">
+            <div class="col">
+                <div class="container">
+                    <div class="row p-2">
+                        <div class="col another_block ml-2 mr-2" id="guitar">
+                            <br>
+                            <br>
+                            <p>
+                                Длительность обучения: 1 год и более
+                            </p>
+                            <p>
+                                Уровень знаний: любой уровень
+                            </p>
+                                Программа обучения включает: <br>
+                                - постановка обеих рук; <br>
+                                - обучение основным приемам игры <br>
+                                - чтение различных форм записи нот и аккордов <br>
+                            </p>
+                            <p>
+                                Результат: свободная игра на гитаре
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center col">
+                            <h2>Преподаватели</h2>
+                        </div>
+                    </div>
+                    <div class="row m-2 justify-content-around text-center">
+                        <div class="col-3">
+                            <img src="img/dir/Layer_22.png" alt="Кирилл Кислов" class="img rounded border border-dark">
+                            <h4><br>Кирилл Кислов</h4>
+                        </div>
+                        <div class="col-3">
+                            <img src="img/dir/Layer_24.png" alt="Кирилл Колышкин" class="img rounded border border-dark">
+                            <h4><br>Кирилл Колышкин</h4>
+                        </div>
+                        <div class="col-3">
+                            <img src="img/dir/Layer_33.png" alt="Александр Лицкевич" class="img rounded border border-dark">
+                            <h4><br>Александр Лицкевич</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="card">
-        <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-                <button class="btn collapsed active btn-light" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <h2>Вокал</h2>
-                </button>
-            </h5>
-        </div>
-        <div id="collapseTwo" class="collapse colored" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card-body">
-                <div class="container-fluid">
-                    <h2>Рассказывается о программе обучения</h2>
+    <div class="collapse main_block" id="avocal">
+        <div class="row">
+            <div class="col">
+                <div class="container">
+                    <div class="row p-2">
+                        <div class="col another_block ml-2 mr-2" id="vocal">
+                            <br>
+                            <br>
+                            <p>
+                                Длительность обучения: 1 год и более
+                            </p>
+                            <p>
+                                Уровень знаний: любой уровень
+                            </p>
+                            Программа обучения включает: <br>
+                            - постановка обеих рук; <br>
+                            - обучение основным приемам игры <br>
+                            - чтение различных форм записи нот и аккордов <br>
+                            </p>
+                            <p>
+                                Результат: свободная игра на гитаре
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center col">
+                            <h2>Преподаватели</h2>
+                        </div>
+                    </div>
+                    <div class="row m-2 justify-content-around text-center">
+                        <div class="col-3">
+                            <img src="img/dir/Layer_22.png" alt="Кирилл Кислов" class="img rounded border border-dark">
+                            <h4><br>Кирилл Кислов</h4>
+                        </div>
+                        <div class="col-3">
+                            <img src="img/dir/Layer_24.png" alt="Кирилл Колышкин" class="img rounded border border-dark">
+                            <h4><br>Кирилл Колышкин</h4>
+                        </div>
+                        <div class="col-3">
+                            <img src="img/dir/Layer_33.png" alt="Александр Лицкевич" class="img rounded border border-dark">
+                            <h4><br>Александр Лицкевич</h4>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-                <button class="btn collapsed btn-light active" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <h2>Фортепианно</h2>
-                </button>
-            </h5>
-        </div>
-        <div id="collapseThree" class="collapse colored" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body">
-                <h2>Рассказывается о программе обучения</h2>
             </div>
         </div>
     </div>
 </div>
-<a id="upbutton" href="#" onclick="smoothJumpUp(); return false;">
-    <img src="img/top.png" alt="Top" border="none" title="Наверх" width="60px" height="60px">
-</a>
+<div class="text-center">
+    <button type="button" class="btn sign-up-btn btn-lg mt-5">Записаться</button>
+</div>
 <footer>
     <div class="container mt-5">
         <div class="row text-left">
             <div class="col">
                 <h3>Информация</h3>
-                <a href="#">
-                    <p>О нас</p>
-                </a>
-                <a href="dir.html">
-                    <p>Направления обучения</p>
-                </a>
+                <a href="#"><p>О нас</p></a>
+                <a href="#"><p>Направления обучения</p></a>
             </div>
             <div class="col">
                 <h3>Команда</h3>
-                <a href="contacts2.html">
-                    <p>Проподаватели</p>
-                </a>
+                <a href="#"><p>Проповедователи</p></a>
                 <a href="contacts.html"><p>Контакты</p></a>
             </div>
             <div class="col">
                 <h3>Связаться с нами</h3><br>
                 <div class="container align-items-center">
                     <div class="row">
-                        <div class="col-lg-2 mt-2 col">
-                            <a href="https://www.instagram.com/?hl=ru" class="SocNetLinkImg"><img src="img/instlogo.png" alt="Instagramm"></a>
+                        <div class="col mt-2">
+                            <a href="#" class="SocNetLinkImg"><img src="img/instlogo.png" alt="Instagramm"></a>
                         </div>
-                        <div class="col-lg-2 mt-2 col">
-                            <a href="https://twitter.com/" class="SocNetLinkImg"><img src="img/twitterlogo.png" alt="Twitter"></a>
+                        <div class="col mt-2">
+                            <a href="#" class="SocNetLinkImg"><img src="img/twitterlogo.png" alt="Twitter"></a>
                         </div>
-                        <div class="col-lg-2 mt-2 col">
+                        <div class="col mt-2">
                             <a href="https://vk.com" class="SocNetLinkImg"><img src="img/vklogo.png" alt="vk"></a>
                         </div>
                     </div>
@@ -267,23 +335,6 @@
         </div>
     </div>
 </div>
-<script>
-    var smoothJumpUp = function() {
-        if (document.body.scrollTop>0 || document.documentElement.scrollTop>0) {
-            window.scrollBy(0,-50);
-            setTimeout(smoothJumpUp, 20);
-        }
-    }
-
-    window.onscroll = function() {
-        var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-        if (scrolled > 100) {
-            document.getElementById('upbutton').style.display = 'block';
-        } else {
-            document.getElementById('upbutton').style.display = 'none';
-        }
-    }
-</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -297,5 +348,6 @@
         });
     });
 </script>
+<script src="js/dir.js"></script>
 </body>
 </html>
