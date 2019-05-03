@@ -12,7 +12,7 @@
     <title>Направления обучения</title>
 </head>
 <body>
-<nav class="colored navbar navbar-expand-md navbar-light" id="nav" style="position: absolute; width: 1080px">
+<nav class="navbar navbar-expand-md navbar-light" id="nav" style="position: absolute; width: 1080px">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,7 +39,7 @@
             </button>
         </div>
         <div class="profile ml-3">
-            <a href="profile.html">
+            <a href="profileSTD.html">
                 <h2>
                     Вася Пупкин
                 </h2>
@@ -49,12 +49,12 @@
 </nav>
 <div class="container-fluid intro-text text-center" id="intro">
     <div class="row">
-        <div class="col" id="intro_first">
+        <div class="col text-intro" id="intro_first">
             <img src="img/dir/Classes.png" alt="Classes">
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col text-intro">
             <img src="img/dir/Here_you_can_find_out_about_each_direction_more.png" alt="Here you can find out about each direction more">
         </div>
     </div>
@@ -206,135 +206,6 @@
         </div>
     </div>
 </footer>
-<div class="modal fade" style="z-index: 2000" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Форма входа</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form action="">
-                    <div class="form-group">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col mt-1">
-                                    <label for="loginInNavBar">Login</label>
-                                </div>
-                                <div class="col">
-                                    <input id="loginInNavBar"type="email" class="form-control" placeholder="login">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col mt-1">
-                                    <label for="passwithLogInNavBar">Password</label>
-                                </div>
-                                <div class="col">
-                                    <input id="passwithLogInNavBar"type="password" class="form-control" placeholder="password">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer text-center">
-                <button type="button" class="btn btn-success" data-dismiss="modal" onclick="f1()">Login</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" style="z-index: 2000" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="SignInModalLabel">Форма регистрации</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form action="">
-                    <div class="form-group">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col mt-1">
-                                    <label for="signInNavBar">Login/Email</label>
-                                </div>
-                                <div class="col">
-                                    <input id="signInNavBar"type="text" class="form-control" placeholder="login/email">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col mt-1">
-                                    <label for="passwithSignInNavBar">Password</label>
-                                </div>
-                                <div class="col">
-                                    <input id="passwithSignInNavBar"type="password" class="form-control" placeholder="password">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col mt-1">
-                                    <label for="specialization">Специализация</label>
-                                </div>
-                                <div class="col">
-                                    <select class="form-control" id="specialization">
-                                        <option value="1s">Гитара</option>
-                                        <option value="2s">Вокал</option>
-                                        <option value="3s">и</option>
-                                        <option value="4s">так</option>
-                                        <option value="5s">далее</option>
-                                        <option value="6s">.</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col mt-1">
-                                    <label for="telNum">Телефон</label>
-                                </div>
-                                <div class="col">
-                                    <input id="telNum" type="tel" class="form-control" required placeholder="tel" pattern="+7[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col text-center mt-1">
-                                    <p>Если студент:</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col mt-1">
-                                    <label for="Course">Курс</label>
-                                </div>
-                                <div class="col">
-                                    <select class="form-control" id="Course">
-                                        <option value="1b">1 курс(Бакалавр)</option>
-                                        <option value="2b">2 курс(Бакалавр)</option>
-                                        <option value="3b">3 курс(Бакалавр)</option>
-                                        <option value="4b">4 курс(Бакалавр)</option>
-                                        <option value="1m">1 курс(Магистр)</option>
-                                        <option value="2m">2 курс(Магистр)</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <label class="form-check-label" for="teacherCheckBox">Я препод</label>
-                                </div>
-                                <div class="col text-center">
-                                    <input type="checkbox" class="form-check-input" id="teacherCheckBox">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer text-center">
-                <button type="button" class="btn btn-success" data-dismiss="modal" onclick="f1()">Регистрация</button>
-            </div>
-        </div>
-    </div>
-</div>
 <script src="js/jquery-3.4.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>

@@ -34,11 +34,11 @@ window.onresize= function(){
 }
 
 document.getElementById("logbtn").onclick = function () {
-    document.location.href = "profile.html";
+    document.location.href = "profileSTD.html";
 }
 
 document.getElementById("reg").onclick = function () {
-    document.location.href = "profile.html";
+    document.location.href = "profileSTD.html";
 }
 
 function IncorrectEntet() {

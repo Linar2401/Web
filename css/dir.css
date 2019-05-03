@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "AlexBrushFont";
+    src: url("../fonts/AlexBrush-Regular.ttf");
+}
+
 .navbar-light {
     background: rgba(102, 102, 102, 0.3);
 }
@@ -8,7 +13,7 @@
 
 nav {
     position: absolute;
-    z-index: 10000;
+    z-index: 1000;
 }
 
 a p {
@@ -59,4 +64,8 @@ a p:focus, a p:visited, a p:hover{
 
 footer {
     background-color: #aadbdd;
+}
+
+.text-intro {
+    font-family: AlexBrush;
 }

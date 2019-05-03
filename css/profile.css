@@ -1,22 +1,13 @@
-.colored {
-    background-image: url("../img/back.png");
+html {
+    background-color: #ecebea;
 }
 
-#upbutton {
-    background: url("../img/top.png") no-repeat top left;
-    height: 60px;
-    width: 60px;
-    bottom: 30px;
-    right: 30px;
-    cursor: pointer;
-    display: none;
-    position: fixed;
-    z-index: 999;
+.navbar-light {
+    background: #a4afd6
 }
 
-footer {
-    border-top: 2px solid #dfe0e1;
-    margin-top: 2px;
+nav {
+    z-index: 1000;
 }
 
 a p {
@@ -27,19 +18,66 @@ a p:focus, a p:visited, a p:hover{
     text-decoration: underline;
 }
 
-.rounded-circle {
-    max-width: 95%;
-    height: auto;
+a.btn-link {
+    color: black;
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 1.2rem;
 }
 
-#headingOne {
-    background-image: url("../img/guitar.png");
+a.btn-link.active {
+    color: #260990;
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 1.2rem;
 }
 
-#headingTwo {
-    background-image: url("../img/vocal.png");
+a.btn-link:active, a.btn-link:hover, a.btn-link:focus  {
+    color: black;
+    font-weight:bold;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
-#headingThree {
-    background-image: url("../img/pianno.png");
+a.active.btn-link:active, a.active.btn-link:hover, a.active.btn-link:focus  {
+    color: #260990;
+    font-weight:bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.selection {
+    background-color: #cbd4f4;
+}
+
+.element {
+    background-color: #ecebea;
+}
+
+#spec_text {
+    background-color: white;
+    border: 2px solid orange;
+}
+
+#spec_text2  {
+    background-color: white;
+    border: 2px solid green;
+}
+
+#schedule_main {
+    background-color: white;
+    border: 2px solid black;
+}
+
+.btn-courses {
+    border: 2px solid orange;
+    color: black;
+}
+
+footer {
+    background-color: #cbd4f4;
+}
+
+.text_about {
+    background-color: white;
 }

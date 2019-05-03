@@ -18,8 +18,6 @@ var btn2 = document.getElementById("sel-2");
 var btn3 = document.getElementById("sel-3");
 
 
-
-
 function f1() {
     $("#aguitar").collapse("toggle");
 }
