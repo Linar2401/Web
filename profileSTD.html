@@ -31,7 +31,7 @@
     </div>
     <div class="dropdown">
         <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <img src="img/Layer_4.png" class="img-thumbnail" alt="notify" style="height: 35px">
+            <img src="img/alarm-2.png" class="img-fluid notifications_list" alt="notify">
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <div class="dropdown-item">asd</div>
@@ -49,7 +49,7 @@
             </a>
         </h3>
     </div>
-    <button type="button" class="btn nav-item mr-md-2 btn-outline-dark ml-2 nav text-center">
+    <button type="button" class="btn nav-item mr-md-2 btn-outline-dark ml-2 text-center">
         Выход
     </button>
 </nav>
@@ -67,7 +67,7 @@
         </div>
         <div class="col col-md-3">
             <a class="btn btn-link" id="eventBTN" data-toggle="collapse" href="#event" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Мероприятия
+                Мои группы
             </a>
         </div>
         <div class="col col-md-3">
@@ -165,8 +165,70 @@
         <div class="col-3 col-md-2">
             <img src="img/no-avatar.png" alt="person image" class="img-thumbnail rounded-circle">
         </div>
-        <div class="col-9 col-md-6 text_about border-dark">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda dolor numquam perspiciatis repellat. Ad amet, consequatur cumque debitis dolor earum eligendi fugiat inventore molestiae nihil nisi nulla perspiciatis porro, quaerat quis ratione, repellendus reprehenderit tenetur ut voluptate. Accusamus, saepe.
+        <div class="col-9 col-md-6 text_about border-dark no-m-p">
+            <div class="card text-center">
+                <div class="card-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-10">
+                                <h2>Мой профиль</h2>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn" id="edit_about_me">
+                                    <img src="img/edit_icon.png" class="img-fluid">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="container text-left">
+                        <div class="row m-2">
+                            <div class="col-4">
+                                <p>Имя</p>
+                            </div>
+                            <div class="col">
+                                <input class="form-control my_profile" type="text" placeholder="Имя" value="Василий" readonly>
+                            </div>
+                        </div>
+                        <div class="row m-2">
+                            <div class="col-4">
+                                <p>Фамилия</p>
+                            </div>
+                            <div class="col">
+                                <input class="form-control my_profile" type="text" placeholder="Фамилия" value="Пупкин" readonly>
+                            </div>
+                        </div>
+                        <div class="row m-2">
+                            <div class="col-4">
+                                <p>Отчество</p>
+                            </div>
+                            <div class="col">
+                                <input class="form-control my_profile" type="text" placeholder="Отчество" value="Васильевич" readonly>
+                            </div>
+                        </div>
+                        <div class="row m-2">
+                            <div class="col-4">
+                                <p>Телефон</p>
+                            </div>
+                            <div class="col">
+                                <input class="form-control my_profile" type="text" placeholder="+7 *** *** ** **" value="8 900 999 99 99" readonly>
+                            </div>
+                        </div>
+                        <div class="row m-2">
+                            <div class="col-4">
+                                <p>Почта</p>
+                            </div>
+                            <div class="col">
+                                <input class="form-control my_profile" type="text" placeholder="exampleEmail@gmail.com" value="pupkin@gmail.com" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-block btn-success" id="edit_save">
+                    <p>Сохранить</p>
+                </button>
+            </div>
         </div>
     </div>
 </div>
@@ -232,71 +294,81 @@
 
 </div>
 <div class="container-fluid collapse element p-4" id="event">
-    <div class="row mt-2">
-        <div class="col">
-            <div class="card text-center">
-                <div class="card-header">
-                    Новость
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Заголовок</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus assumenda beatae delectus dolore doloribus, enim exercitationem inventore iste iusto labore maxime modi, officiis optio quasi qui sed suscipit ut veniam vero. A molestias omnis sint sunt tempora. Consequuntur, sed?</p>
-                    <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
-                </div>
-                <div class="card-footer text-muted">
-                    2 дня назад
+    <div class="row justify-content-between">
+        <div class="col-2">
+            <div class="dropdown">
+                <button class="btn groups_btn dropdown-toggle" type="button" id="dropdownGroup" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Группы
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">1</a>
+                    <a class="dropdown-item" href="#">2</a>
+                    <a class="dropdown-item" href="#">3</a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row mt-2">
-        <div class="col">
-            <div class="card text-center">
-                <div class="card-header">
-                    Новость
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Заголовок</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus assumenda beatae delectus dolore doloribus, enim exercitationem inventore iste iusto labore maxime modi, officiis optio quasi qui sed suscipit ut veniam vero. A molestias omnis sint sunt tempora. Consequuntur, sed?</p>
-                    <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
-                </div>
-                <div class="card-footer text-muted">
-                    2 дня назад
-                </div>
-            </div>
+        <div class="col-2">
+            <button type="button" class="btn groups_btn">
+                Создать группу
+            </button>
         </div>
     </div>
-    <div class="row mt-2">
-        <div class="col">
-            <div class="card text-center">
-                <div class="card-header">
-                    Новость
+    <div class="row mt-5 justify-content-center">
+        <div class="card text-center" id="card_of_groups">
+            <div class="card-body container" id="list_of_std_in_group">
+                <div class="row m-2 justify-content-between border-top">
+                    <div class="col">
+                        <a href="#">
+                            <p>Имя Фамилия</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="close_std close" data-dismiss="modal" data-toggle="modal" data-target="#confirm">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Заголовок</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus assumenda beatae delectus dolore doloribus, enim exercitationem inventore iste iusto labore maxime modi, officiis optio quasi qui sed suscipit ut veniam vero. A molestias omnis sint sunt tempora. Consequuntur, sed?</p>
-                    <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                <div class="row m-2 justify-content-between border-top">
+                    <div class="col">
+                        <a href="#">
+                            <p>Имя Фамилия</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="close_std close" data-dismiss="modal" data-toggle="modal" data-target="#confirm">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                 </div>
-                <div class="card-footer text-muted">
-                    2 дня назад
+                <div class="row m-2 justify-content-between border-top">
+                    <div class="col">
+                        <a href="#">
+                            <p>Имя Фамилия</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="close_std close" data-dismiss="modal" data-toggle="modal" data-target="#confirm">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row m-2 justify-content-between border-top">
+                    <div class="col">
+                        <a href="#">
+                            <p>Имя Фамилия</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="close_std close" data-dismiss="modal" data-toggle="modal" data-target="#confirm">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="row mt-2">
-        <div class="col">
-            <div class="card text-center">
-                <div class="card-header">
-                    Новость
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Заголовок</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus assumenda beatae delectus dolore doloribus, enim exercitationem inventore iste iusto labore maxime modi, officiis optio quasi qui sed suscipit ut veniam vero. A molestias omnis sint sunt tempora. Consequuntur, sed?</p>
-                    <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
-                </div>
-                <div class="card-footer text-muted">
-                    2 дня назад
-                </div>
+            <div class="card-footer">
+                <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#addPersonInGroup">
+                    Добавить участника
+                </button>
             </div>
         </div>
     </div>
@@ -333,6 +405,95 @@
         </div>
     </div>
 </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="addPersonInGroup" tabindex="-1" role="dialog" aria-labelledby="addPersonInGroupLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addPersonInGroupLabel">Добавление участника</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group scrollable">
+                    <li class="list-group-item pl-5">
+                        <input type="checkbox" class="form-check-input add_std">
+                        <h5>Василий Пупкин</h5>
+                    </li>
+                    <li class="list-group-item pl-5">
+                        <input type="checkbox" class="form-check-input add_std">
+                        <h5>Василий Пупкин</h5>
+                    </li>
+                    <li class="list-group-item pl-5">
+                        <input type="checkbox" class="form-check-input add_std">
+                        <h5>Василий Пупкин</h5>
+                    </li>
+                    <li class="list-group-item pl-5">
+                        <input type="checkbox" class="form-check-input add_std">
+                        <h5>Василий Пупкин</h5>
+                    </li>
+                    <li class="list-group-item pl-5">
+                        <input type="checkbox" class="form-check-input add_std">
+                        <h5>Василий Пупкин</h5>
+                    </li>
+                    <li class="list-group-item pl-5">
+                        <input type="checkbox" class="form-check-input add_std">
+                        <h5>Василий Пупкин</h5>
+                    </li>
+                    <li class="list-group-item pl-5">
+                        <input type="checkbox" class="form-check-input add_std">
+                        <h5>Василий Пупкин</h5>
+                    </li>
+                    <li class="list-group-item pl-5">
+                        <input type="checkbox" class="form-check-input add_std">
+                        <h5>Василий Пупкин</h5>
+                    </li>
+                    <li class="list-group-item pl-5">
+                        <input type="checkbox" class="form-check-input add_std">
+                        <h5>Василий Пупкин</h5>
+                    </li>
+                    <li class="list-group-item pl-5">
+                        <input type="checkbox" class="form-check-input add_std">
+                        <h5>Василий Пупкин</h5>
+                    </li>
+                    <li class="list-group-item pl-5">
+                        <input type="checkbox" class="form-check-input add_std">
+                        <h5>Василий Пупкин</h5>
+                    </li>
+                    <li class="list-group-item pl-5">
+                        <input type="checkbox" class="form-check-input add_std">
+                        <h5>Василий Пупкин</h5>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal" id="add_std_btn">Добавить</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 2000">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmLabel">Удаление участника</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Вы действительно желаете удалить участника группы?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" id="close_btn">Удалить</button>
+                <button type="button" class="btn btn-warning" data-dismiss="modal">Отмена</button>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="modal fade" style="z-index: 2000" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">

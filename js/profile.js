@@ -15,9 +15,13 @@ window.onresize = function () {
     schedule_main.style.height = schedule_main.offsetWidth/2  + "px";
     dropdown_btn3.style.borderRadius = dropdown_btn3.offsetHeight/2 + "px";
     dropdown_btn4.style.borderRadius = dropdown_btn4.offsetHeight/2 + "px";
+    card_of_groups.style.width = card_of_groups.parentElement.offsetWidth*0.95 + "px";
+    resize2();
 }
 var schedule_main = document.getElementById("schedule_main");
 
+
+var card_of_groups = document.getElementById("card_of_groups");
 var spec_text = document.getElementById("spec_text");
 var spec_btn1 = document.getElementById("spec_btn1");
 var spec_btn2 = document.getElementById("spec_btn2");
@@ -183,6 +187,92 @@ btn4.onclick = function () {
         active = 4;
     }
 }
+
+var btn_edit = document.getElementById("edit_about_me");
+var btn_save = document.getElementById("edit_save");
+
+var fields_about_me = document.getElementsByClassName("my_profile");
+
+btn_edit.onclick = function () {
+    for (var i = 0; i < fields_about_me.length; i++){
+        if (fields_about_me[i].hasAttribute("readonly")){
+            fields_about_me[i].removeAttribute("readonly");
+        }
+    }
+}
+
+btn_save.onclick = function () {
+    var flag = true;
+    for (var i = 0; i < fields_about_me.length; i++){
+        if (!fields_about_me[i].hasAttribute("readonly")){
+            fields_about_me[i].setAttribute("readonly" , null);
+        }
+        else {
+            flag = false;
+        }
+    }
+    if (flag){
+        alert("Данные успешно обновлены")
+    }
+}
+
+var list_btn = document.getElementsByClassName("groups_btn");
+
+function resize2() {
+    for (var i = 0; i < list_btn.length; i++){
+        list_btn[i].style.borderRadius = list_btn[i].offsetHeight/2 + "px"
+    }
+}
+
+var list_close_btn = document.getElementsByClassName("close_std");
+var deliting_field;
+var close_btn = document.getElementById("close_btn");
+
+for (var i = 0; i < list_close_btn.length; i++){
+    list_close_btn[i].onclick = function () {
+        // this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
+        deliting_field = this.parentNode.parentNode;
+    };
+}
+
+close_btn.onclick = function () {
+    deliting_field.parentNode.removeChild(deliting_field);
+}
+
+var list_adding_chk_boxes = document.getElementsByClassName("add_std");
+var add_std_btn = document.getElementById("add_std_btn");
+var list_of_std_in_group = document.getElementById("list_of_std_in_group");
+
+add_std_btn.onclick = function () {
+    for (var d = 0; d < list_adding_chk_boxes.length; d++){
+        if (list_adding_chk_boxes[d].checked){
+            alert(list_adding_chk_boxes[d].nextElementSibling.textContent);
+            list_of_std_in_group.innerHTML += "<div class=\"row m-2 justify-content-between border-top\">\n" +
+                "                    <div class=\"col\">\n" +
+                "                        <a href=\"#\">\n" +
+                "                            <p>" + list_adding_chk_boxes[d].nextElementSibling.textContent + "</p>\n" +
+                "                        </a>\n" +
+                "                    </div>\n" +
+                "                    <div class=\"col\">\n" +
+                "                        <button type=\"button\" class=\"close_std close\" data-dismiss=\"modal\" data-toggle=\"modal\" data-target=\"#confirm\">\n" +
+                "                            <span aria-hidden=\"true\">&times;</span>\n" +
+                "                        </button>\n" +
+                "                    </div>\n" +
+                "                </div>";
+            list_close_btn = document.getElementsByClassName("close");
+            console.log(list_close_btn);
+        }
+    } 
+}
+
+
+function insert() {
+    list_of_std_in_group.innerHTML += 100;
+}
+
+
+
+
 
 
 

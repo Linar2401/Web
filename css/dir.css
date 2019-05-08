@@ -4,11 +4,16 @@
 }
 
 .navbar-light {
-    background: rgba(102, 102, 102, 0.3);
+    background: rgba(203, 212, 244, 0.7);
 }
 
+/*#intro_first img{*/
+    /*height: 40%;*/
+    /*width:;*/
+/*}*/
+
 .intro-text {
-    background-image: url("../img/dir/Layer_31.png");
+    height: 25%;
 }
 
 nav {
@@ -52,7 +57,7 @@ a p:focus, a p:visited, a p:hover{
     font-size: 1.5rem;
 }
 
-#guitar{
+#guitar {
     background: url("../img/dir/Layer_21.png") right no-repeat;
     height: 463px;
 }
@@ -67,5 +72,6 @@ footer {
 }
 
 .text-intro {
-    font-family: AlexBrush;
+    margin: 0px;
+    padding: 0px;
 }

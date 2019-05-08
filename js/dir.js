@@ -3,14 +3,14 @@ var intro_text = document.getElementById("intro_first");
 
 function resize() {
     navbar.style.width = document.documentElement.clientWidth + "px";
-    intro_text.style.marginTop = navbar.offsetHeight + "px";
+    // intro_text.style.marginTop = navbar.offsetHeight + "px";
 }
 
 resize();
 
 window.onresize = function () {
     navbar.style.width = document.documentElement.clientWidth + "px";
-    intro_text.style.marginTop = navbar.offsetHeight*1.1 + "px";
+    // intro_text.style.marginTop = navbar.offsetHeight*4.1 + "px";
 };
 
 var btn1 = document.getElementById("sel-1");
@@ -26,6 +26,10 @@ function f2() {
     $("#avocal").collapse("toggle");
 }
 
+function f3() {
+    $("#eguitar").collapse("toggle");
+}
+
 var active = 1;
 
 btn1.onclick = function () {
@@ -38,6 +42,7 @@ btn1.onclick = function () {
         else {
             btn3.classList.remove("active");
             btn1.classList.add("active");
+            f3();
         }
         active = 1;
     }
@@ -58,6 +63,7 @@ btn2.onclick = function () {
         else {
             btn3.classList.remove("active");
             btn2.classList.add("active");
+            f3();
         }
         active = 2;
     }
@@ -85,6 +91,7 @@ btn3.onclick = function () {
     else {
         btn3.classList.remove("active");
         active = 0;
+        f3();
     }
 }
 

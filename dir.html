@@ -50,12 +50,7 @@
 <div class="container-fluid intro-text text-center" id="intro">
     <div class="row">
         <div class="col text-intro" id="intro_first">
-            <img src="img/dir/Classes.png" alt="Classes">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col text-intro">
-            <img src="img/dir/Here_you_can_find_out_about_each_direction_more.png" alt="Here you can find out about each direction more">
+            <img src="img/dir/nTkBJVT9zTc.png" alt="Classes" class="img-fluid">
         </div>
     </div>
 </div>
@@ -69,7 +64,7 @@
             <p>Вокал</p>
             <img src="img/dir/microphone.png" alt="">
         </button>
-        <button type="button" class="btn select-btn" id="sel-3">
+        <button type="button" id="sel-3" class="btn select-btn" data-toggle="collapse" data-target="#eguitar" aria-expanded="false" aria-controls="collapseEGuitar">
             <p>Электрогитара</p>
             <img src="img/dir/electroquitar.png" alt="">
         </button>
@@ -154,6 +149,49 @@
                     </div>
                     <div class="row m-2 justify-content-around text-center">
                         <div class="col-3">
+                            <img src="img/dir/Marg.png" alt="Маргарита Прохорова" class="img rounded border border-dark img-teacher">
+                            <h4><br>Маргарита Прохорова</h4>
+                        </div>
+                        <div class="col-3">
+                            <img src="img/dir/Musa.png" alt="Муса Залялутдинов" class="img rounded border border-dark img-teacher">
+                            <h4><br>Муса Залялутдинов</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="collapse main_block" id="eguitar">
+        <div class="row">
+            <div class="col">
+                <div class="container">
+                    <div class="row p-2">
+                        <div class="col another_block ml-2 mr-2" id="Elguitar">
+                            <br>
+                            <br>
+                            <p>
+                                Длительность обучения: 1 год и более
+                            </p>
+                            <p>
+                                Уровень знаний: любой уровень
+                            </p>
+                            Программа обучения включает: <br>
+                            - постановка обеих рук; <br>
+                            - обучение основным приемам игры <br>
+                            - чтение различных форм записи нот и аккордов <br>
+                            </p>
+                            <p>
+                                Результат: свободная игра на гитаре
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center col">
+                            <h2>Преподаватели</h2>
+                        </div>
+                    </div>
+                    <div class="row m-2 justify-content-around text-center">
+                        <div class="col-3">
                             <img src="img/dir/Layer_22.png" alt="Кирилл Кислов" class="img rounded border border-dark">
                             <h4><br>Кирилл Кислов</h4>
                         </div>
@@ -173,6 +211,130 @@
 </div>
 <div class="text-center">
     <button type="button" class="btn sign-up-btn btn-lg mt-5">Записаться</button>
+</div>
+<div class="modal fade" style="z-index: 2000" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Форма входа</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="/" method="post">
+                    <div class="form-group">
+                        <div class="container-fluid">
+                            <div class="row mt-1">
+                                <div class="col mt-1">
+                                    <label for="loginInNavBar">Login</label>
+                                </div>
+                                <div class="col">
+                                    <input id="loginInNavBar" name="login" type="email" class="form-control" placeholder="login" required>
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col mt-1">
+                                    <label for="passwithLogInNavBar">Password</label>
+                                </div>
+                                <div class="col">
+                                    <input id="passwithLogInNavBar" name="password" type="password" class="form-control" placeholder="password" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <button type="submit" class="btn btn-success" id="logbtn">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" style="z-index: 2000" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="SignInModalLabel">Форма регистрации</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="/register" method="post">
+                    <div class="form-group">
+                        <div class="container-fluid">
+                            <div class="row mt-1">
+                                <div class="col mt-1">
+                                    <label for="signInNavBar">Login/Email</label>
+                                </div>
+                                <div class="col">
+                                    <input id="signInNavBar" name="email" type="email" class="form-control" placeholder="login/email" required>
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col mt-1">
+                                    <label for="passwithSignInNavBar">Password</label>
+                                </div>
+                                <div class="col">
+                                    <input id="passwithSignInNavBar" name="password" type="password" class="form-control" placeholder="password" required>
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col mt-1">
+                                    <label for="specialization">Специализация</label>
+                                </div>
+                                <div class="col">
+                                    <select class="form-control" name="specialization" id="specialization">
+                                        <option value="1">Гитара</option>
+                                        <option value="2">Вокал</option>
+                                        <option value="3">и</option>
+                                        <option value="4">так</option>
+                                        <option value="5">далее</option>
+                                        <option value="6">.</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col mt-1">
+                                    <label for="telNum">Телефон</label>
+                                </div>
+                                <div class="col">
+                                    <input id="telNum" name="tel" type="tel" class="form-control" required placeholder="tel" pattern="+7[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col mt-1">
+                                    <label for="Course">Курс</label>
+                                </div>
+                                <div class="col">
+                                    <select class="form-control" id="Course">
+                                        <option value="1b">1 курс(Бакалавр)</option>
+                                        <option value="2b">2 курс(Бакалавр)</option>
+                                        <option value="3b">3 курс(Бакалавр)</option>
+                                        <option value="4b">4 курс(Бакалавр)</option>
+                                        <option value="1m">1 курс(Магистр)</option>
+                                        <option value="2m">2 курс(Магистр)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col">
+                                    <label class="form-check-label" for="teacherCheckBox">Я препод</label>
+                                </div>
+                                <div class="col text-center">
+                                    <input type="checkbox" class="form-check-input" id="teacherCheckBox">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <button type="submit" class="btn btn-success" id="reg">Регистрация</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 <footer>
     <div class="container mt-5">

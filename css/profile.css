@@ -81,3 +81,28 @@ footer {
 .text_about {
     background-color: white;
 }
+
+.notifications_list {
+    height: 50px;
+}
+
+.no-m-p {
+    margin:0px;
+    padding:0px;
+}
+
+.groups_btn {
+    border: 2px solid blue;
+    color: black;
+    background-color: white;
+}
+
+#card_of_groups {
+    width: 95%;
+}
+
+.scrollable {
+    height: auto;
+    max-height: 30em;
+    overflow-x: hidden;
+}
