@@ -149,4 +149,14 @@ a p:focus, a p:visited, a p:hover{
     text-decoration: underline;
 }
 
+.carousel-image {
+    height: 100%;
+    z-index: 1000;
+}
+
+.carousel-caption p, .carousel-caption h4 {
+    color: white;
+    font-size: 25px;
+}
+
 

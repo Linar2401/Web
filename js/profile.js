@@ -1,4 +1,5 @@
 var nav_bar = document.getElementById("nav");
+var list_btn = document.getElementsByClassName("groups_btn");
 
 function resize() {
     nav_bar.style.width = document.documentElement.clientWidth + "px";
@@ -12,14 +13,13 @@ window.onresize = function () {
     spec_text.style.width = dropdown_btn1.offsetWidth + "px";
     spec_text2.style.borderRadius = spec_text2.offsetHeight/2 + "px";
     spec_text2.style.width = dropdown_btn2.offsetWidth + "px";
-    schedule_main.style.height = schedule_main.offsetWidth/2  + "px";
+    // schedule_main.style.height = schedule_main.offsetWidth/2  + "px";
     dropdown_btn3.style.borderRadius = dropdown_btn3.offsetHeight/2 + "px";
     dropdown_btn4.style.borderRadius = dropdown_btn4.offsetHeight/2 + "px";
     card_of_groups.style.width = card_of_groups.parentElement.offsetWidth*0.95 + "px";
     resize2();
 }
-var schedule_main = document.getElementById("schedule_main");
-
+// var schedule_main = document.getElementById("schedule_main");
 
 var card_of_groups = document.getElementById("card_of_groups");
 var spec_text = document.getElementById("spec_text");
@@ -40,7 +40,7 @@ var dropdown_btn4 = document.getElementById("dropdown_btn4");
 dropdown_btn3.style.borderRadius = dropdown_btn3.offsetHeight/2 + "px";
 dropdown_btn4.style.borderRadius = dropdown_btn4.offsetHeight/2 + "px";
 
-schedule_main.style.height = schedule_main.offsetWidth/2  + "px";
+// schedule_main.style.height = schedule_main.offsetWidth/2  + "px";
 
 spec_text.style.borderRadius = spec_text.offsetHeight/2 + "px";
 spec_text.style.width = dropdown_btn1.offsetWidth + "px";
@@ -216,8 +216,6 @@ btn_save.onclick = function () {
     }
 }
 
-var list_btn = document.getElementsByClassName("groups_btn");
-
 function resize2() {
     for (var i = 0; i < list_btn.length; i++){
         list_btn[i].style.borderRadius = list_btn[i].offsetHeight/2 + "px"
@@ -297,6 +295,11 @@ add_std_btn.onclick = function () {
 
 function insert() {
     list_of_std_in_group.innerHTML += 100;
+}
+
+function makeSTD() {
+    var ss = document.getElementById("eventBTN").parentNode;
+    ss.classList.add("d-none");
 }
 
 
