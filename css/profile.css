@@ -135,3 +135,8 @@ td:nth-last-child(-n+2) {
 .groups_btn {
     border-radius: 20px;
 }
+
+.schedule_card {
+    max-width: 10rem;
+}
+
