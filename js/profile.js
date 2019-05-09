@@ -228,16 +228,25 @@ var list_close_btn = document.getElementsByClassName("close_std");
 var deliting_field;
 var close_btn = document.getElementById("close_btn");
 
-for (var i = 0; i < list_close_btn.length; i++){
-    list_close_btn[i].onclick = function () {
-        // this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
-        deliting_field = this.parentNode.parentNode;
-    };
-}
+// for (var i = 0; i < list_close_btn.length; i++){
+//     list_close_btn[i].onclick = function () {
+//         // this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
+//         deliting_field = this.parentNode.parentNode;
+//     }
+// }
 
-close_btn.onclick = function () {
-    deliting_field.parentNode.removeChild(deliting_field);
-}
+$('html').on('click','.close_std', function () {
+    deliting_field = $(this).parent().parent();
+});
+
+// close_btn.onclick = function () {
+//     // deliting_field.remove();
+//
+// }
+
+$('html').on('click','#close_btn', function () {
+    $(deliting_field).remove();
+});
 
 var list_adding_chk_boxes = document.getElementsByClassName("add_std");
 var add_std_btn = document.getElementById("add_std_btn");
@@ -247,19 +256,39 @@ add_std_btn.onclick = function () {
     for (var d = 0; d < list_adding_chk_boxes.length; d++){
         if (list_adding_chk_boxes[d].checked){
             alert(list_adding_chk_boxes[d].nextElementSibling.textContent);
-            list_of_std_in_group.innerHTML += "<div class=\"row m-2 justify-content-between border-top\">\n" +
-                "                    <div class=\"col\">\n" +
-                "                        <a href=\"#\">\n" +
-                "                            <p>" + list_adding_chk_boxes[d].nextElementSibling.textContent + "</p>\n" +
-                "                        </a>\n" +
-                "                    </div>\n" +
-                "                    <div class=\"col\">\n" +
-                "                        <button type=\"button\" class=\"close_std close\" data-dismiss=\"modal\" data-toggle=\"modal\" data-target=\"#confirm\">\n" +
-                "                            <span aria-hidden=\"true\">&times;</span>\n" +
-                "                        </button>\n" +
-                "                    </div>\n" +
-                "                </div>";
-            list_close_btn = document.getElementsByClassName("close");
+            var templ = document.createElement("div");
+            var tmp_btn = document.createElement("button");
+            var tmp_col_btn = document.createElement("div");
+            var tmp_col_btn2 = document.createElement("div");
+            templ.className = "row m-2 justify-content-between border-top";
+            tmp_btn.className = "close_std close";
+            tmp_btn.setAttribute("type","button");
+            tmp_btn.setAttribute("data-dismiss","modal");
+            tmp_btn.setAttribute("data-target","#confirm");
+            tmp_btn.setAttribute("data-toggle","modal");
+            tmp_btn.innerHTML = "<span aria-hidden=\"true\">&times;</span>";
+
+            tmp_col_btn.className = "col";
+            tmp_col_btn2.className = "col";
+            tmp_col_btn.appendChild(tmp_btn);
+            tmp_col_btn2.innerHTML = "<a href=\"#\"><p>" + list_adding_chk_boxes[d].nextElementSibling.textContent + "</p></a>"
+            templ.appendChild(tmp_col_btn2);
+            templ.appendChild(tmp_col_btn);
+            list_of_std_in_group.appendChild(templ);
+
+            // list_of_std_in_group.innerHTML += "<div class=\"row m-2 justify-content-between border-top\">\n" +
+            //     "                    <div class=\"col\">\n" +
+            //     "                        <a href=\"#\">\n" +
+            // "                            <p>" + list_adding_chk_boxes[d].nextElementSibling.textContent + "</p>\n" +
+            // "                        </a>\n" +
+            //     "                    </div>\n" +
+            //     "                    <div class=\"col\">\n" +
+            //     "                        <button type=\"button\" class=\"close_std close\" data-dismiss=\"modal\" data-toggle=\"modal\" data-target=\"#confirm\">\n" +
+            //     "                            <span aria-hidden=\"true\">&times;</span>\n" +
+            //     "                        </button>\n" +
+            //     "                    </div>\n" +
+            //     "                </div>";
+            list_close_btn = document.getElementsByClassName("close_std");
             console.log(list_close_btn);
         }
     } 
