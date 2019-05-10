@@ -298,14 +298,23 @@ function insert() {
 }
 
 function makeSTD() {
-    var ss = document.getElementById("eventBTN").parentNode;
-    ss.classList.add("d-none");
+    var ss = document.getElementsByClassName("teacher");
+    for (var h = 0; h < ss.length; h++){
+        ss[h].classList.add("d-none");
+    }
+}
+
+function makeT() {
+    var ss = document.getElementsByClassName("teacher");
+    for (var h = 0; h < ss.length; h++){
+        ss[h].classList.remove("d-none");
+    }
 }
 
 var btn_req = document.getElementById("btn_request");
 
 btn_req.onclick = function () {
-    alert("Ваша заявка успешно принято в обработку.")
+    alert("Ваша заявка успешно принято в обработку.");
 }
 
 
