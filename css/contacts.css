@@ -1,6 +1,6 @@
-.colored {
-    background-image: url("../img/back.png");
-}
+/*.colored {*/
+    /*background-image: url("../img/back.png");*/
+/*}*/
 
 #upbutton {
     background: url("../img/top.png") no-repeat top left;
@@ -32,14 +32,10 @@ a p:focus, a p:visited, a p:hover{
     height: auto;
 }
 
-#headingOne {
-    background-image: url("../img/guitar.png");
+.acordion {
+    background-color: #d7e0ff;
 }
 
-#headingTwo {
-    background-image: url("../img/vocal.png");
-}
-
-#headingThree {
-    background-image: url("../img/pianno.png");
+nav {
+    background-color: #cbd4f4;
 }

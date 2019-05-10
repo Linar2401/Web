@@ -11,10 +11,10 @@
 </head>
 <body>
     <nav id="nav" class="navbar navbar-expand-md gradient" style="position: absolute; width: 1080px">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="img/Sloy_2.png" width="30px" height="30px">
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="img/Sloy_2.png" width="30px" height="30px">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
                 <a class="nav-link active" href="#">Главная</a>
@@ -35,17 +35,27 @@
             </button>
         </form>
     </div>
-</nav>
+    </nav>
     <div id="carouselExampleControls" class="carousel slide top-carousel" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <a href="https://www.google.com">
-                <img src="img/1.png" class="d-block w-100 carousel-image img-fluid" alt="Event">
+                <img src="img/Layer_3.png" class="d-block w-100 carousel-image img-fluid" alt="Event">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>19 Апреля</h4>
+                    <p>Приглашаем всех желающих<br>принять участие в студвесне,<br>оторая пройдет в КСК КФУ УНИКС</p>
+                    <p style="text-underline: white">Узнать подробности</p>
+                </div>
             </a>
         </div>
         <div class="carousel-item">
             <a href="#">
                 <img src="img/12.png" class="d-block w-100 carousel-image img-fluid" alt="Event">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>12 Апреля</h4>
+                    <p>Состоиться Гала-концер<br>Студенческой весны</p>
+                    <p style="text-underline: white">Узнать подробности</p>
+                </div>
             </a>
         </div>
         <div class="carousel-item">
@@ -53,8 +63,7 @@
                 <img src="img/13.png" class="d-block w-100 carousel-image img-fluid" alt="Event">
                 <div class="carousel-caption d-none d-md-block">
                     <h4>12 Апреля</h4>
-                    <p>Состоиться Гала-концерт</p>
-                    <p>Студенческой весны</p>
+                    <p>Состоиться Гала-концер<br>Студенческой весны</p>
                     <p style="text-underline: white">Узнать подробности</p>
                 </div>
             </a>
@@ -127,10 +136,10 @@
                             <div class="container-fluid">
                                 <div class="row mt-1">
                                     <div class="col mt-1">
-                                        <label for="loginInNavBar">Login</label>
+                                        <label for="loginInNavBar">Email</label>
                                     </div>
                                     <div class="col">
-                                        <input id="loginInNavBar" name="login" type="email" class="form-control" placeholder="login" required>
+                                        <input id="loginInNavBar" name="login" type="email" class="form-control" placeholder="email" required>
                                     </div>
                                 </div>
                                 <div class="row mt-1">
@@ -161,7 +170,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="/register" method="post">
+                    <form action="/signup" method="post">
                         <div class="form-group">
                             <div class="container-fluid">
                                 <div class="row mt-1">
@@ -220,7 +229,7 @@
                                 </div>
                                 <div class="row mt-1">
                                     <div class="col">
-                                        <label class="form-check-label" for="teacherCheckBox">Я препод</label>
+                                        <label class="form-check-label" for="teacherCheckBox">Я преподаватель</label>
                                     </div>
                                     <div class="col text-center">
                                         <input type="checkbox" class="form-check-input" id="teacherCheckBox">

@@ -56,15 +56,15 @@
 </div>
 <div class="container-fluid mt-3 p-3" id="select_buttons">
     <div class="row justify-content-around">
-        <button type="button" class="btn select-btn active" id="sel-1" data-toggle="collapse" data-target="#aguitar" aria-expanded="false" aria-controls="collapseGuitar">
+        <button type="button" class="btn select-btn active" id="sel-1" data-toggle="collapse" aria-expanded="false" aria-controls="collapseGuitar">
             <p>Акуст.гитара</p>
             <img src="img/dir/guitar%20(1).png" alt="">
         </button>
-        <button type="button" class="btn select-btn" id="sel-2" data-toggle="collapse" data-target="#avocal" aria-expanded="false" aria-controls="collapseVocal">
+        <button type="button" class="btn select-btn" id="sel-2" data-toggle="collapse" aria-expanded="false" aria-controls="collapseVocal">
             <p>Вокал</p>
             <img src="img/dir/microphone.png" alt="">
         </button>
-        <button type="button" id="sel-3" class="btn select-btn" data-toggle="collapse" data-target="#eguitar" aria-expanded="false" aria-controls="collapseEGuitar">
+        <button type="button" id="sel-3" class="btn select-btn" data-toggle="collapse" aria-expanded="false" aria-controls="collapseEGuitar">
             <p>Электрогитара</p>
             <img src="img/dir/electroquitar.png" alt="">
         </button>
@@ -101,17 +101,17 @@
                         </div>
                     </div>
                     <div class="row m-2 justify-content-around text-center">
-                        <div class="col-3">
+                        <div class="col col-md-3">
                             <img src="img/dir/Layer_22.png" alt="Кирилл Кислов" class="img rounded border border-dark">
                             <h4><br>Кирилл Кислов</h4>
                         </div>
-                        <div class="col-3">
+                        <div class="col col-md-3">
                             <img src="img/dir/Layer_24.png" alt="Кирилл Колышкин" class="img rounded border border-dark">
                             <h4><br>Кирилл Колышкин</h4>
                         </div>
-                        <div class="col-3">
-                            <img src="img/dir/Layer_33.png" alt="Александр Лицкевич" class="img rounded border border-dark">
-                            <h4><br>Александр Лицкевич</h4>
+                        <div class="col col-md-3">
+                            <img src="img/dir/Musa.png" alt="Муса Залялутдинов" class="img rounded border border-dark img-teacher">
+                            <h4><br>Муса Залялутдинов</h4>
                         </div>
                     </div>
                 </div>
@@ -148,11 +148,11 @@
                         </div>
                     </div>
                     <div class="row m-2 justify-content-around text-center">
-                        <div class="col-3">
+                        <div class="col col-md-3">
                             <img src="img/dir/Marg.png" alt="Маргарита Прохорова" class="img rounded border border-dark img-teacher">
                             <h4><br>Маргарита Прохорова</h4>
                         </div>
-                        <div class="col-3">
+                        <div class="col col-md-3">
                             <img src="img/dir/Musa.png" alt="Муса Залялутдинов" class="img rounded border border-dark img-teacher">
                             <h4><br>Муса Залялутдинов</h4>
                         </div>
@@ -190,15 +190,7 @@
                         </div>
                     </div>
                     <div class="row m-2 justify-content-around text-center">
-                        <div class="col-3">
-                            <img src="img/dir/Layer_22.png" alt="Кирилл Кислов" class="img rounded border border-dark">
-                            <h4><br>Кирилл Кислов</h4>
-                        </div>
-                        <div class="col-3">
-                            <img src="img/dir/Layer_24.png" alt="Кирилл Колышкин" class="img rounded border border-dark">
-                            <h4><br>Кирилл Колышкин</h4>
-                        </div>
-                        <div class="col-3">
+                        <div class="col col-md-3">
                             <img src="img/dir/Layer_33.png" alt="Александр Лицкевич" class="img rounded border border-dark">
                             <h4><br>Александр Лицкевич</h4>
                         </div>
@@ -226,10 +218,10 @@
                         <div class="container-fluid">
                             <div class="row mt-1">
                                 <div class="col mt-1">
-                                    <label for="loginInNavBar">Login</label>
+                                    <label for="loginInNavBar">Email</label>
                                 </div>
                                 <div class="col">
-                                    <input id="loginInNavBar" name="login" type="email" class="form-control" placeholder="login" required>
+                                    <input id="loginInNavBar" name="login" type="email" class="form-control" placeholder="email" required>
                                 </div>
                             </div>
                             <div class="row mt-1">
@@ -243,7 +235,7 @@
                         </div>
                     </div>
                     <div class="modal-footer text-center">
-                        <button type="submit" class="btn btn-success" id="logbtn">Login</button>
+                        <button type="submit" class="btn btn-success">Login</button>
                     </div>
                 </form>
             </div>
@@ -260,7 +252,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="/register" method="post">
+                <form action="/signup" method="post">
                     <div class="form-group">
                         <div class="container-fluid">
                             <div class="row mt-1">
@@ -319,7 +311,7 @@
                             </div>
                             <div class="row mt-1">
                                 <div class="col">
-                                    <label class="form-check-label" for="teacherCheckBox">Я препод</label>
+                                    <label class="form-check-label" for="teacherCheckBox">Я преподаватель</label>
                                 </div>
                                 <div class="col text-center">
                                     <input type="checkbox" class="form-check-input" id="teacherCheckBox">

@@ -34,6 +34,7 @@ var active = 1;
 
 btn1.onclick = function () {
     if (active !== 1){
+        f1();
         if (active === 2){
             btn2.classList.remove("active");
             btn1.classList.add("active");
@@ -46,15 +47,11 @@ btn1.onclick = function () {
         }
         active = 1;
     }
-    else {
-        btn1.classList.remove("active");
-        active = 0;
-        f1();
-    }
 }
 
 btn2.onclick = function () {
     if (active !== 2){
+        f2();
         if (active === 1){
             btn1.classList.remove("active");
             btn2.classList.add("active");
@@ -67,15 +64,11 @@ btn2.onclick = function () {
         }
         active = 2;
     }
-    else {
-        btn2.classList.remove("active");
-        active = 0;
-        f2();
-    }
 }
 
 btn3.onclick = function () {
     if (active !== 3){
+        f3();
         if (active === 2){
             btn2.classList.remove("active");
             btn3.classList.add("active");
@@ -87,11 +80,6 @@ btn3.onclick = function () {
             f1();
         }
         active = 3;
-    }
-    else {
-        btn3.classList.remove("active");
-        active = 0;
-        f3();
     }
 }
 

@@ -87,23 +87,24 @@ function close() {
 }
 
 function f2() {
-    $("#schedule").collapse("hide");
+    $("#schedule").collapse("toggle");
 }
 
 function f1() {
-    $("#aboutMe").collapse("hide");
+    $("#aboutMe").collapse("toggle");
 }
 
 function f4() {
-    $("#settings").collapse("hide");
+    $("#settings").collapse("toggle");
 }
 
 function f3() {
-    $("#event").collapse("hide");
+    $("#event").collapse("toggle");
 }
 
 btn1.onclick = function () {
     if (active !==1){
+        f1();
         switch (active) {
             case 2:
                 btn2.classList.remove("active");
@@ -125,6 +126,7 @@ btn1.onclick = function () {
 
 btn2.onclick = function () {
     if (active !==2){
+        f2();
         switch (active) {
             case 1:
                 btn1.classList.remove("active");
@@ -147,6 +149,7 @@ btn2.onclick = function () {
 
 btn3.onclick = function () {
     if (active !==3){
+        f3();
         switch (active) {
             case 2:
                 btn2.classList.remove("active");
@@ -169,6 +172,7 @@ btn3.onclick = function () {
 
 btn4.onclick = function () {
     if (active !==4){
+        f4();
         switch (active) {
             case 2:
                 btn2.classList.remove("active");

@@ -17,7 +17,7 @@ function f1() {
     enterTTC[0].style.height = (carousel.offsetWidth/40)*11 + "px";
     navbar.style.width = carousel.offsetWidth + "px";
     for (let i = 0; i < arrOfImg.length; i++){
-        arrOfImg[i].style.width = carousel.offsetWidth/4 + "px";
+        // arrOfImg[i].style.width = carousel.offsetWidth/4 + "px";
         arrOfImg[i].style.height = carousel.offsetWidth/4 + "px";
     }
 }
