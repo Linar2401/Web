@@ -69,7 +69,49 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-    <!-- Modal -->
+        <!--Header-->
+    <div class="container" id="MainContent">
+        <div class="row justify-content-around">
+            <div class="col col-md-5 text-center">
+                <h1>Направления обучения</h1>
+                <p>здесь представлены все курсы</p>
+                <p>на которые ты можешь записаться прямо сейчас</p>
+            </div>
+        </div>
+        <div class="row justify-content-around text-center">
+            <div class="col">
+                <a href="#">
+                    <img src="img/Layer_21.png" class="rounded-circle img-thumbnail img-direction" alt="guitar">
+                </a>
+                <p>Электрогитара</p>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <img src="img/Layer_25.png" alt="vocal" class="rounded-circle img-thumbnail img-direction">
+                </a>
+                <p>Фортепиано</p>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <img src="img/Layer_23.png" alt="vocal" class="rounded-circle img-thumbnail img-direction">
+                </a>
+                <p>Вокал</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col">
+                <a href="dir.html">
+                    <h2>Посмотреть все направления</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-light" id="Courses" data-toggle="modal" data-target="#signin">
+        Записаться
+    </button>
+    <img src="img/2.png" class="enterToTheCourses" alt="">
+    </div>
+
     <div class="modal fade" style="z-index: 2000" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -102,7 +144,7 @@
                             </div>
                         </div>
                         <div class="modal-footer text-center">
-                            <button type="submit" class="btn btn-success" id="logbtn">Login</button>
+                            <button type="submit" class="btn btn-success">Login</button>
                         </div>
                     </form>
                 </div>
@@ -194,48 +236,7 @@
             </div>
         </div>
     </div>
-    <!--Header-->
-    <div class="container" id="MainContent">
-        <div class="row justify-content-around">
-            <div class="col col-md-5 text-center">
-                <h1>Направления обучения</h1>
-                <p>здесь представлены все курсы</p>
-                <p>на которые ты можешь записаться прямо сейчас</p>
-            </div>
-        </div>
-        <div class="row justify-content-around text-center">
-            <div class="col">
-                <a href="#">
-                    <img src="img/Layer_21.png" class="rounded-circle img-thumbnail img-direction" alt="guitar">
-                </a>
-                <p>Электрогитара</p>
-            </div>
-            <div class="col">
-                <a href="#">
-                    <img src="img/Layer_25.png" alt="vocal" class="rounded-circle img-thumbnail img-direction">
-                </a>
-                <p>Фортепиано</p>
-            </div>
-            <div class="col">
-                <a href="#">
-                    <img src="img/Layer_23.png" alt="vocal" class="rounded-circle img-thumbnail img-direction">
-                </a>
-                <p>Вокал</p>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col">
-                <a href="dir.html">
-                    <h2>Посмотреть все направления</h2>
-                </a>
-            </div>
-        </div>
-    </div>
-    <button type="button" class="btn btn-light" id="Courses" data-toggle="modal" data-target="#signin">
-        Записаться
-    </button>
-    <img src="img/2.png" class="enterToTheCourses" alt="">
-    </div>
+
     <footer>
         <div class="container mt-5">
             <div class="row text-left">
@@ -268,7 +269,7 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>

@@ -253,7 +253,6 @@ var list_of_std_in_group = document.getElementById("list_of_std_in_group");
 add_std_btn.onclick = function () {
     for (var d = 0; d < list_adding_chk_boxes.length; d++){
         if (list_adding_chk_boxes[d].checked){
-            alert(list_adding_chk_boxes[d].nextElementSibling.textContent);
             var templ = document.createElement("div");
             var tmp_btn = document.createElement("button");
             var tmp_col_btn = document.createElement("div");
