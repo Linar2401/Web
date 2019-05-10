@@ -302,6 +302,12 @@ function makeSTD() {
     ss.classList.add("d-none");
 }
 
+var btn_req = document.getElementById("btn_request");
+
+btn_req.onclick = function () {
+    alert("Ваша заявка успешно принято в обработку.")
+}
+
 
 
 
